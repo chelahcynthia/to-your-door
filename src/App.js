@@ -5,6 +5,7 @@ import Cart from "./components/Cart";
 import Profile from "./components/Profile";
 import LogIn from "./components/LogIn";
 import NavBar from "./components/NavBar";
+import "./App.css";
 
 function App() {
   return (

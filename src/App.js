@@ -5,7 +5,9 @@ import Cart from "./components/Cart";
 import Profile from "./components/Profile";
 import LogIn from "./components/LogIn";
 import NavBar from "./components/NavBar";
+import Food from "./components/Food"
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<LogIn />} />
+        <Route path="/food" element={<Food />} />
       </Routes>
     </>
   );

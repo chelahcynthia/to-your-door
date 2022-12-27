@@ -21,9 +21,9 @@ function LogIn() {
             <input type="password" placeholder="password" name=""></input>
           </span>
           <br></br>
-          <button>Login</button>
+          <button id="login-btn">Login</button>
           <div className="links">
-                <a href="#">Don't have an account?</a>
+                <p>Don't have an account?&nbsp;</p>
                 <a href="#">Signup</a>
             </div>
         </form>

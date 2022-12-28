@@ -8,7 +8,7 @@
   text-align: left;
 
   padding-bottom: 20px;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .main-content input {
@@ -20,9 +20,9 @@
   border-bottom: 2px solid black;
   padding-left: 40px;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 15px;
   color: black;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 .sign-btn {
   width: 200px;
@@ -39,4 +39,14 @@
   font-size: 20px;
   font-weight: 200;
   margin-bottom: 16px;
+}
+.sign-link {
+  display: flex;
+  align-items: baseline;
+  font-size: 15px;
+}
+.sign-link a {
+  color: #00a3ff;
+  text-decoration: none;
+  font-weight: bold;
 }

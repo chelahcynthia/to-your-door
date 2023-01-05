@@ -1,0 +1,63 @@
+.profile {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.prof-header{
+    display: flex;
+}
+
+.prof-header h2 {
+    font-size: 2rem;
+}
+
+.prof-user {
+    font-size: 2rem;
+}
+
+.prof-container {  
+  overflow: hidden;
+  width: 350px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: rgb(206, 203, 203);
+}
+
+.meal-cards {
+    display: grid;
+}
+
+.card {
+  overflow: hidden;
+  width: 350px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: rgb(206, 203, 203);
+}
+
+.prof-user {
+  overflow: hidden;
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+  background-color: rgb(206, 203, 203);
+}
+
+.meal-description {
+    display: grid;
+}
+
+.meal {
+    overflow: hidden;
+    width: 350px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: rgb(206, 203, 203); 
+}
+
+
+
+
+
+

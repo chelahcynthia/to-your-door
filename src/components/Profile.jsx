@@ -3,16 +3,20 @@ import "./Profile.css"
 
 function Profile() {
   return (
-    <div className='profile'>
-      {/* <div className='prof-header'>
+    <>
+    <div className='prof-header'>
         <h2>Profile</h2>
         <i className='prof-user' class="fa fa-user-circle"></i>
-      </div> */}
-
+      </div>
+    <div className='profile'>
       <div className='prof-container'>
         <h1>Hi, Chelah!</h1>
         <p>We have a new meal in Restaurant 02! Try it now!</p>
-      </div>      
+      </div> 
+
+       <div className='prof-user'>
+
+      </div>     
 
       <div className='meal-cards'>
         <h3>Your Favorite Meals</h3>
@@ -26,11 +30,7 @@ function Profile() {
           <img src="https://www.pexels.com/photo/shrimp-pasta-served-on-gray-plate-2092906/" alt="" />
         </div>  
        
-      </div>
-
-      <div className='prof-user'>
-
-      </div>
+      </div>    
 
       <div className='meal-description'>
         <div className='meal'>
@@ -53,6 +53,8 @@ function Profile() {
       </div>
 
     </div>
+    </>    
+    
   )
 }
 

@@ -4,12 +4,12 @@ import "./Profile.css"
 function Profile() {
   return (
     <>
-    <div className='prof-header'>
+    <div className='prof-container'>
         <h2>Profile</h2>
-        <i className='prof-user' class="fa fa-user-circle"></i>
+        <i className="fa fa-user-circle"></i>
       </div>
     <div className='profile'>
-      <div className='prof-container'>
+      <div className='prof-header'>
         <h1>Hi, Chelah!</h1>
         <p>We have a new meal in Restaurant 02! Try it now!</p>
       </div> 
@@ -21,35 +21,41 @@ function Profile() {
       <div className='meal-cards'>
         <h3>Your Favorite Meals</h3>
         <div className='card'>
-          <img src="https://www.pexels.com/photo/vegetable-salad-on-white-ceramic-plate-1211887/" alt="" />
+          <img src="https://img.freepik.com/free-photo/delicious-fried-chicken-plate_144627-27383.jpg?w=1380&t=st=1672986158~exp=1672986758~hmac=fcf3188835893291e477bebb1a1b0d9564e635c0ed98847a307fd10d140882d9" alt="" />
         </div>
         <div className='card'>
-          <img src="https://www.pexels.com/photo/close-up-of-served-food-on-table-327158/" alt="" />
+          <img src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=1480" alt="" />
         </div>
         <div className='card'>
-          <img src="https://www.pexels.com/photo/shrimp-pasta-served-on-gray-plate-2092906/" alt="" />
+          <img src="https://img.freepik.com/free-photo/chicken-skewers-with-slices-sweet-peppers-dill_2829-18813.jpg?w=1380&t=st=1672986735~exp=1672987335~hmac=2ce74dfba4228412b7afe5eba4c5ac8bb4b3cb6e12b00f875f09b31fdec3985d" alt="" />
         </div>  
        
       </div>    
 
       <div className='meal-description'>
         <div className='meal'>
+          <div className='meal-text'>
           <p>2 Assorted Sliced Fruits and Vegetables</p>
           <p>Ksh. 1800.00</p>
+          </div>          
           <i class="fa fa-trash" aria-hidden="true"></i>
         </div>
 
         <div className='meal'>
+          <div className='meal-text'>
           <p>2 Assorted Sliced Fruits and Vegetables</p>
           <p>Ksh. 1800.00</p>
+          </div>          
           <i class="fa fa-trash" aria-hidden="true"></i>
         </div>
 
         <div className='meal'>
+          <div className='meal-text'>
           <p>2 Assorted Sliced Fruits and Vegetables</p>
           <p>Ksh. 1800.00</p>
+          </div>          
           <i class="fa fa-trash" aria-hidden="true"></i>
-        </div>        
+        </div>      
       </div>
 
     </div>

@@ -1,12 +1,7 @@
 .cart-container
 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 70vh;
-  padding-left: 20px;
-  text-align: center;
-  font-size: 25px;
+  display: grid;
+  
 }
 
 .browse-btn

@@ -1,6 +1,13 @@
 .cart-container
 {
-  
+  display: grid;
+  gap: 1.5rem;
+  grid-template-rows: repeat(2, 1fr);
+  padding-block: 2rem;
+  justify-items: center;
+  font-size: 25px;
+  font-family: fantasy;
+
   
 }
 

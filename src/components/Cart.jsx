@@ -5,7 +5,7 @@ function Cart() {
   return (
     <div className='cart-container'>
       Your cart is looking empty
-      <button className='browse-btn'> Browse Restaurants</button>
+    <button className='browse-btn'> Browse Restaurants</button>  
       </div>
     
     

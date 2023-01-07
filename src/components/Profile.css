@@ -29,10 +29,15 @@
   letter-spacing: .1rem;
 }
 
-.prof-header h1 {
+.prof-header h1, h3 {
     font-size: 2.5rem;
     font-family: 'Inter';
     font-weight: 800
+}
+
+.prof-header h3 {
+    position: absolute;
+    bottom: 500px;
 }
 
 .prof-header p {
@@ -43,22 +48,23 @@
 .prof-user {
     overflow: hidden;
     width: 1200px;
-    height: 220px;
+    height: 350px;
     border-radius: 5px;
     background: url(https://img.freepik.com/free-vector/abstract-hand-drawn-woman-portrait_52683-58156.jpg?w=826&t=st=1672988236~exp=1672988836~hmac=7d4eda86503521d077a8a51ede4c0280b3a204651df9cabd0ec869c71e13f762);
-    filter: grayscale(100%);
+    filter: grayscale(100%);   
+    padding-bottom: 2rem; 
   }
 
 .meal-cards {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .meal-cards h3 {
     font-size: 2.5rem;
 }
 
-.card {
+.card {  
   overflow: hidden;
   width: 600px;
   height: 150px;

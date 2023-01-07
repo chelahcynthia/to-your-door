@@ -12,14 +12,16 @@ function Profile() {
       <div className='prof-header'>
         <h1>Hi, Chelah!</h1>
         <p>We have a new meal in Restaurant 02! Try it now!</p>
+        <h3>Your Favorite Meals</h3>         
       </div> 
 
        <div className='prof-user'>
 
-      </div>     
+      </div>   
+        
 
-      <div className='meal-cards'>
-        <h3>Your Favorite Meals</h3>
+      <div className='meal-cards'>  
+          
         <div className='card'>
           <img src="https://img.freepik.com/free-photo/delicious-fried-chicken-plate_144627-27383.jpg?w=1380&t=st=1672986158~exp=1672986758~hmac=fcf3188835893291e477bebb1a1b0d9564e635c0ed98847a307fd10d140882d9" alt="" />
         </div>

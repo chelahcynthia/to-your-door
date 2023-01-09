@@ -6,6 +6,7 @@ import Profile from "./components/Profile";
 import LogIn from "./components/LogIn";
 import SignUp from "./components/SignUp"
 import NavBar from "./components/NavBar";
+import Food from "./components/Food";
 import "./App.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<LogIn />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/food" element={<Food />} />
       </Routes>
     </>
   );

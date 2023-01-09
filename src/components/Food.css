@@ -2,11 +2,13 @@
 {
   display: grid;
   gap: 1.5rem;
-  grid-template-rows: repeat(2, 2fr);
+  grid-template-columns: repeat(2, 2fr);
   padding-block: 2rem;
   justify-items: center;
   font-size: 30px;
   font-family: fantasy;
   font-style: italic;
+  font-display: black;
+  height: max-content;
 
 }

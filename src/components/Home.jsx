@@ -1,17 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Home.css';
 
 
 function Home() {
   return (
     <div className="home-container">
-      <button className="delivery-btn">
+      <Link to="/about" className="delivery-btn">
         <i className="fa fa-map-marker"></i>
           Enter Delivery Address
-      </button>
-      <button className="order-btn">
+      </Link>
+      <Link to="/restaurant" className="order-btn">
         <i className="fa fa-cutlery"></i>Order Now
-      </button>
+      </Link>
     </div>
   );
 }

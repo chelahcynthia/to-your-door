@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar";
 import "./App.css";
 
 function App() {
+  // const [cart, setCart] = useState({});
   return (
     <>
       <NavBar />

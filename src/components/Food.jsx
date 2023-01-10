@@ -16,13 +16,10 @@ function Food() {
             <Card.Title className="title-color">Monster Burger</Card.Title>
             <Card.Subtitle  className="subtitle-color">bleeeh</Card.Subtitle>
             <Card.Text className="text-color">
-              This Monster Burger is piled high with fresh sliced tomatoes, a
-              mango and avocado topping plus a hash brown patty! And if that
-              wasn’t enough a surprise spicy mayo. There’s no end to the
-              delicious layers of flavor!
+             This burger is pilled with caramelized onions pilled with puineapple sauce.
             </Card.Text>
             <Card.Link href="#">
-              <Button variant="primary">order now</Button>
+              <Button variant="secondary">order now</Button>
             </Card.Link>
             <Form>
               <Form.Group>
@@ -30,10 +27,9 @@ function Food() {
               </Form.Group>
               <Form.Control
                 type="number"
-                placeholder="select quantity"
-                htmlSize={5}
-
-              ></Form.Control>
+                placeholder="select quantity">
+                    
+                </Form.Control>
             </Form>
           </Card.ImgOverlay>
         </Card.Body>

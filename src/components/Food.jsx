@@ -15,20 +15,23 @@ function Food() {
           <Card.ImgOverlay>
             <Card.Title className="title-color">Monster Burger</Card.Title>
             <Card.Subtitle  className="subtitle-color">bleeeh</Card.Subtitle>
-            <Card.Text className="text-color">
-             This burger is pilled with caramelized onions pilled with puineapple sauce.
+            <Card.Text >
+             This burger is filled with caramelized onions a very seasoned patty and pilled with pineapple sauce.
             </Card.Text>
-            <Card.Link href="#">
-              <Button variant="secondary">order now</Button>
-            </Card.Link>
-            <Form>
+            
+            <a href="/cart">
+              <Button className="button-style" variant="secondary">add to cart</Button>
+            
+
+            </a>
+          <Form>
               <Form.Group>
                 <Form.Label>Quantity</Form.Label>
               </Form.Group>
               <Form.Control
                 type="number"
                 placeholder="select quantity">
-                    
+
                 </Form.Control>
             </Form>
           </Card.ImgOverlay>

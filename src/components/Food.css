@@ -1,18 +1,3 @@
-.food-container
-{
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(2, 2fr);
-  padding-block: 2rem;
-  justify-items: center;
-  font-size: 30px;
-  font-family: fantasy;
-  font-style: italic;
-  font-display: black;
-  height: max-content;
-
-}
-
 .text-color
 {
     color: azure;
@@ -26,4 +11,9 @@
 .subtitle-color
 {
     color: antiquewhite;
+}
+
+.button-style
+{
+    color: aqua;
 }

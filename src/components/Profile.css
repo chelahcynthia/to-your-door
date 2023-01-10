@@ -1,6 +1,6 @@
 .prof-container{
   display: flex;
-  margin: 0 0 0 2.5rem;
+  margin-left: 1.5rem;
 }
 
 .prof-container h2 {
@@ -16,7 +16,8 @@
   display: grid;
   gap: 1.5rem;
   grid-template-columns: .4fr .7fr;  
-  grid-template-rows: .5fr .2fr .2fr .2fr;
+  grid-template-rows: .8fr .3fr .3fr .3fr;
+  margin: 1rem 1.5rem 0 1.5rem;
 }
 
 .prof-header {  
@@ -39,9 +40,7 @@
 }
 
 .prof-user {
-  overflow: hidden;
-  /* width: 100%;
-  height: 330px; */
+  overflow: hidden;  
   border-radius: 5px;
   background: url(https://img.freepik.com/free-vector/abstract-hand-drawn-woman-portrait_52683-58156.jpg?w=826&t=st=1672988236~exp=1672988836~hmac=7d4eda86503521d077a8a51ede4c0280b3a204651df9cabd0ec869c71e13f762);
   filter: grayscale(100%);
@@ -57,21 +56,21 @@ border-radius: 5px;
 .card img {
   width: 100%;
   height: 100%;
-  margin: auto;
+  object-fit: cover;
 }
 
 .meal {
-  overflow: hidden;
-  /* width: 1200px;
-  height: 150px; */
+  overflow: hidden;  
   border-radius: 5px;
-  background-color: #D9D9D9       
+  background-color: #D9D9D9;     
 }
 
 .meal-text {
   display: flex;
-  justify-content: space-between;  
-}
+  justify-content: space-between;
+  align-items: center;
+
+  }
 
 .meal i {
   font-size: 2rem;

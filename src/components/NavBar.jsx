@@ -15,23 +15,23 @@ function NavBar() {
         <div className="navbar-nav">
           <ul id="my-nav-links" className="nav-links">
             <li>
-              <NavLink to="/">
+              <NavLink className="navlink" to="/">
                 <i className="fa fa-fw fa-home"></i>Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/cart">
+              <NavLink className="navlink" to="/cart">
                 <i className="fa fa-shopping-cart"></i>Cart
               </NavLink>
             </li>
 
             <li>
-              <NavLink to="/profile">
+              <NavLink className="navlink" to="/profile">
                 <i className="fa fa-fw fa-user"></i>Profile
               </NavLink>
             </li>
             <li>
-              <NavLink to="/login">
+              <NavLink className="navlink" to="/login">
                 <i className="fa fa-sign-in"></i>LogIn
               </NavLink>
             </li>

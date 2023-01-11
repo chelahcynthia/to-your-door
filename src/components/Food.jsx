@@ -15,7 +15,7 @@ function Food() {
           <Card.ImgOverlay>
             <Card.Title className="title-color">Monster Burger</Card.Title>
             <Card.Subtitle  className="subtitle-color">bleeeh</Card.Subtitle>
-            <Card.Text >
+            <Card.Text className="text-color">
              This burger is filled with caramelized onions a very seasoned patty and pilled with pineapple sauce.
             </Card.Text>
             

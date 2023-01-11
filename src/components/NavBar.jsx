@@ -35,12 +35,7 @@ function NavBar() {
                 <i className="fa fa-sign-in"></i>LogIn
               </NavLink>
             </li>
-
-            <li>
-              <NavLink className="navlink" to="/food">
-                <i className="fa fa-bread"></i>Food
-              </NavLink>
-            </li>
+            
           </ul>
         </div>
       </nav>

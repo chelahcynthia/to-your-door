@@ -28,7 +28,7 @@ function Food() {
               <Form.Control
                 type="number"
                 placeholder="select quantity"
-                position="relative"
+                // position="relative"
                 >
                 </Form.Control>
             </Form>

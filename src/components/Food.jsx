@@ -23,19 +23,25 @@ function Food(props) {
            
             <Form className="quantity-box">
               <Form.Group>
-                <Form.Label>Quantity</Form.Label>
+                <Form.Label>{props.price}</Form.Label>
               </Form.Group>
               <Form.Control
                 type="number"
-                placeholder="select quantity"
+                placeholder="quantity"
               ></Form.Control>
             </Form>
-            <a href="/cart">
-              <Button variant="secondary">add to cart</Button>
+
+            {/* adds to the cart */}
+            <a href="#">
+              <Button variant="secondary">Add to cart</Button>
               </a>
           </Card.ImgOverlay>
         </Card.Body>
       </Card>
+      <table className="foodTable">
+      
+      
+      </table>
     </>
   );
 }

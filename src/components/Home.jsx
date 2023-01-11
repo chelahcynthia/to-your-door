@@ -10,7 +10,7 @@ function Home() {
         <i className="fa fa-map-marker"></i>
           Enter Delivery Address
       </Link>
-      <Link to="/restaurant" className="order-btn">
+      <Link to="/food" className="order-btn">
         <i className="fa fa-cutlery"></i>Order Now
       </Link>
     </div>

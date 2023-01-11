@@ -2,7 +2,6 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
-
 import "./Food.css";
 
 function Food() {
@@ -21,8 +20,6 @@ function Food() {
             
             <a href="/cart">
               <Button className="button-style" variant="secondary">add to cart</Button>
-            
-
             </a>
           <Form>
               <Form.Group>
@@ -30,8 +27,9 @@ function Food() {
               </Form.Group>
               <Form.Control
                 type="number"
-                placeholder="select quantity">
-
+                placeholder="select quantity"
+                position="relative"
+                >
                 </Form.Control>
             </Form>
           </Card.ImgOverlay>
@@ -40,5 +38,4 @@ function Food() {
     </>
   );
 }
-
 export default Food;

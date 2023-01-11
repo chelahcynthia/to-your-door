@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import "./Food.css";
-function Food() {
+function Food(props) {
   const [foodData, setFoodData] = useState([])
   return (
     <>
@@ -15,10 +15,10 @@ function Food() {
         />
         <Card.Body>
           <Card.ImgOverlay>
-            <Card.Title className="title-color">Monster Burger</Card.Title>
-            <Card.Subtitle className="subtitle-color">200</Card.Subtitle>
+            <Card.Title className="title-color">{props.name}</Card.Title>
+            <Card.Subtitle className="subtitle-color">{props.price}</Card.Subtitle>
             <Card.Text className="text-color">
-              Beef burger served with a side of fries or onion rings.
+              {props.description}
             </Card.Text>
            
             <Form className="quantity-box">

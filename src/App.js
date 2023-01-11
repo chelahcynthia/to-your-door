@@ -4,8 +4,14 @@ import Home from "./components/Home";
 import Cart from "./components/Cart";
 import Profile from "./components/Profile";
 import LogIn from "./components/LogIn";
+import SignUp from "./components/SignUp"
+import About from "./components/About";
 import NavBar from "./components/NavBar";
+
 import Food from "./components/Food"
+
+import Restaurant from "./components/Restaurant"
+
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 

@@ -20,14 +20,19 @@ img {
     height: 156px;
     
 }*/
+
 .image-1{
     position: absolute;
     width: 817px;
-    height: 357px;
+    height: 360px;
     left: 81px;
     top: 149px;
-
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
+
 .image-2{
     position: absolute;
     width: 991px;
@@ -54,15 +59,31 @@ img {
 .image-5{
     position: absolute;
     width:889px;
-    height: 120px;
+    height: 150px;
     left: 82px;
     top: 787px;
 }
 .image-6{
     position: absolute;
     width: 849px;
-    height: 120px;
+    height: 150px;
     left: 992px;
     top: 787px;
 
+}
+.text{
+    position: absolute;
+    width: 691px;
+    height: 73px;
+    left: 81px;
+    top: 518px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+display: flex;
+align-items: center;
+text-align: center;
 }

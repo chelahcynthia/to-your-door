@@ -1,0 +1,23 @@
+.text-color
+{
+    color: azure;
+}
+.title-color
+{
+    color: antiquewhite;
+}
+.subtitle-color
+{
+    color: rgb(236, 209, 174);
+}
+.quantity-box
+{
+    color: white;
+    width:25%;
+    float: right;
+}
+.link-tag
+{
+    float: right;
+    color: grey;
+}

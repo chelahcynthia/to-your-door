@@ -13,11 +13,9 @@ function Restaurant(){
     <>
       <h2 className='restaurant-heading'> Restaurants <GiKnifeFork/> </h2>
         <div className='picture-div'>
-            <img src={Res1} alt="image1" className='image-1'></img>
-            <img src={Res2} alt="image2" className= 'image-2'></img>
-            <img src={Res3} alt="image3" className= 'image-3'></img>
-        </div>
-        <div className='picture2-div'>
+          <img src={Res1} alt="image1" className='image-1'></img>
+          <img src={Res2} alt="image2" className= 'image-2'></img>
+          <img src={Res3} alt="image3" className= 'image-3'></img>
           <img src={Res4} alt="image4" className= 'image-4'></img>
           <img src={Res5} alt="image5" className= 'image-5'></img>
           <img src={Res6} alt="image6" className= 'image-6'></img>

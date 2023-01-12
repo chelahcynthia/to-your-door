@@ -34,8 +34,8 @@ function Food(props) {
   <Card.Text>
     {food.description}
   </Card.Text>
-  <Card.Link href="#">Card Link</Card.Link>
-  <Card.Link href="#">Another Link</Card.Link>
+  <Card.Link href="#">Add to Cart</Card.Link>
+
 
   
 

@@ -1,31 +1,31 @@
 .text-color
 {
-    color: azure;
+    color: black;
 }
 .title-color
 {
-    color: antiquewhite;
+    color:  black;
 }
 .subtitle-color
 {
-    color: rgb(236, 209, 174);
+    color:  black;
+}
+
+/* this is the card for the food details */
+.food-card{
+    position:relative;
 }
 .quantity-box
 {
-    color: white;
-    width:28%;
-    float: right;
+    bottom:50px;
+   position:absolute;
+    width:160px;
+    right:20px;
+    padding:10px;
 }
-.link-tag
-{
-    float: right;
-    color: grey;
+.order-action{
+   
 }
 
-/* div for the food items */
-.foodItem {
 
-
-    
-}
 

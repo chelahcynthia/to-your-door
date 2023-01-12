@@ -79,20 +79,34 @@ function Food(props) {
                
                 {foodData.map((food, idx) =>
             <Col>
-              <Card>
-            
+              <Card className="food-card">
+            <Card.Img src={food.path} />
             <Card.Body>
-
-              <Card.Title>{food.mealName}</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">Price: {food.price}</Card.Subtitle>
-              <Card.Img variant="top" src={food.path} />
-              <Card.Text>
+            <Card.ImgOverlay>
+              <Card.Title className="title-color">{food.mealName}</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted subtitle-color">Price: {food.price}</Card.Subtitle>
+              
+              <Card.Text className="text-color">
                {food.description}
               </Card.Text>
-
+                  <Form>
+                  <Form.Group className="quantity-box">
+                    <div className="order-action">
+                    <Form.Control type="number" placeholder="QTY"></Form.Control>
+                  <a href="/cart">
+                    <Button variant="secondary">ADD TO CART</Button>
+                  </a>
+                    </div>
+                 
+                  </Form.Group>
+                 
+                </Form>
+              </Card.ImgOverlay>
             </Card.Body>
           </Card>
-         
+         <Form>
+          
+         </Form>
         </Col>
         )}
              

@@ -23,7 +23,9 @@ img {
 
 .image-1{
     position: absolute;
-    width: 817px;
+    border: 2px;
+    border-radius: 80px 60px;
+    width: 717px;
     height: 360px;
     left: 81px;
     top: 149px;
@@ -35,14 +37,18 @@ img {
 
 .image-2{
     position: absolute;
-    width: 991px;
+    border: 2px solid black;
+    border-radius: 80px 80px;
+    width: 871px;
     height: 357px;
-    left: 908px;
+    left: 810px;
     top: 149px;
 }
 .image-3{
     position: absolute;
-    width: 1191px;
+    border: 2px;
+    border-radius: 80px 80px;
+    width: 791px;
     height: 256px;
     left: 81px;
     top: 517px;
@@ -51,23 +57,29 @@ img {
 }
 .image-4{
     position: absolute;
-    width: 580px;
+    border: 2px;
+    border-radius: 70px 70px;
+    width: 680px;
     height: 256px;
-    left: 1292px;
-    top: 527px;
+    left: 892px;
+    top: 517px;
 }
 .image-5{
     position: absolute;
-    width:889px;
+    border: 2px;
+    border-radius: 80px 80px;
+    width:799px;
     height: 150px;
     left: 82px;
     top: 787px;
 }
 .image-6{
     position: absolute;
-    width: 849px;
+    border: 2px;
+    border-radius: 90px 90px;
+    width: 749px;
     height: 150px;
-    left: 992px;
+    left: 892px;
     top: 787px;
 
 }

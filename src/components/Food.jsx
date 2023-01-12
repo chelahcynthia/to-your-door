@@ -3,35 +3,9 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import "./Food.css";
-import React, {useState} from "react";
-import Commerce from ""
+// import React, {useState} from "react";
 
 function Food() {
-
-  const commerce = new Commerce(process.env.REACT_APP_PUBLICKEY_SANDBOX)
-
-  const [cart, setCart] = useState()
-
-  useEffect(() => {
-      commerce.cart.retrieve()
-          .then(res => {
-              setCart(res)
-          })
-  },[])
-
-  const addToCart = (productId, variantInfo) => {
-
-      if(variantInfo) {
-          commerce.cart.add(productId, 1, variantInfo)
-              .then(res => {
-                  setCart(res.cart)
-              })
-      } else {
-          window.alert('Please Select a Shirt Size')
-      }
-  }
-
-
   return (
     <>
       <Card style={{ width: "25rem" }}>

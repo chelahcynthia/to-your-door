@@ -1,9 +1,11 @@
-import Item1 from '../../images/item1.jpg'
-import Item2 from '../../images/item2.jpg'
-import Item3 from '../../images/item3.jpg'
-import Item4 from '../../images/item4.jpg'
-import Item5 from '../../images/item5.jpg'
-import Item6 from '../../images/item6.jpg'
+
+/*use images from the internet*/
+import Item1 from 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+import Item2 from 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+import Item3 from 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+import Item4 from 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+import Item5 from 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+import Item6 from 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 
 
 const initState = {

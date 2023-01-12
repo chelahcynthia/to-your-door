@@ -6,42 +6,48 @@ import Form from "react-bootstrap/Form";
 import "./Food.css";
 function Food(props) {
   const [foodData, setFoodData] = useState([])
+
+ 
+  const fetchData = () => {
+    fetch("http://localhost:8000/foods")
+      .then((res) => res.json())
+      .then((data) =>
+      setFoodData(data));
+  };
+ 
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <>
-      <Card style={{ width: "25rem" }}>
-        <Card.Img
-          className="food-image"
-          src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1cmdlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-        />
-        <Card.Body>
-          <Card.ImgOverlay>
-            <Card.Title className="title-color">{props.name}</Card.Title>
-            <Card.Subtitle className="subtitle-color">{props.price}</Card.Subtitle>
-            <Card.Text className="text-color">
-              {props.description}
-            </Card.Text>
-           
-            <Form className="quantity-box">
-              <Form.Group>
-                <Form.Label>{props.price}</Form.Label>
-              </Form.Group>
-              <Form.Control
-                type="number"
-                placeholder="quantity"
-              ></Form.Control>
-            </Form>
+ 
+        <ul>
+ 
+       </ul>
+  
 
-            {/* adds to the cart */}
-            <a href="#">
-              <Button variant="secondary">Add to cart</Button>
-              </a>
-          </Card.ImgOverlay>
-        </Card.Body>
-      </Card>
-      <table className="foodTable">
-      
-      
-      </table>
+       {foodData.map((food)=>{
+
+<Card style={{ width: '18rem' }}>
+<Card.Body >
+
+  
+  <Card.Title>{food.mealName}</Card.Title>
+  <Card.Subtitle className="mb-2 text-muted">{food.price}</Card.Subtitle>
+  <Card.Text>
+    {food.description}
+  </Card.Text>
+  <Card.Link href="#">Card Link</Card.Link>
+  <Card.Link href="#">Another Link</Card.Link>
+
+  
+
+</Card.Body>
+</Card>
+
+
+       })}
+   
     </>
   );
 }

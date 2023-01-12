@@ -1,0 +1,13 @@
+{
+    "foods": [
+        {"mealName": "Burger",
+    "price": 200,
+    "id":1
+    },
+    {
+        "mealName": "Pizza",
+    "price": 300,
+    "id":2
+    }
+    ]
+}

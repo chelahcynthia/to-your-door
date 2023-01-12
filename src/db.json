@@ -2,11 +2,13 @@
     "foods": [
         {"mealName": "Burger",
     "price": 200,
+    "description": "Good stuff",
     "id":1
     },
     {
         "mealName": "Pizza",
     "price": 300,
+    "description": "Good stuff",
     "id":2
     }
     ]

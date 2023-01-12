@@ -20,13 +20,10 @@ function Food(props) {
   }, []);
   return (
     <>
- 
-        <ul>
- 
-       </ul>
   
-
-       {foodData.map((food)=>{
+ 
+       {foodData.map((food)=>
+        
 
 <Card style={{ width: '18rem' }}>
 <Card.Body >
@@ -46,7 +43,10 @@ function Food(props) {
 </Card>
 
 
-       })}
+       )} 
+
+
+
    
     </>
   );

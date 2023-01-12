@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./LogIn.css";
 
 function LogIn() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
     <div className="container">
       <div className="header">
@@ -12,22 +15,26 @@ function LogIn() {
         <form>
           <span>
             <i className="fa fa-user"></i>
-            <input type="text" placeholder="Username" name=""></input>
+            <input
+              type="text"
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Username"
+              name=""
+            ></input>
           </span>
           <br></br>
 
           <span>
             <i className="fa fa-lock"></i>
-            <input type="password" placeholder="password" name=""></input>
+            <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder="password" name=""></input>
           </span>
           <br></br>
           <button id="login-btn">Login</button>
           <div className="links">
-                <p>Don't have an account?&nbsp;</p>
-                <a href="#">Signup</a>
-            </div>
+            <p>Don't have an account?&nbsp;</p>
+            <a href="#">Signup</a>
+          </div>
         </form>
-        
       </div>
     </div>
   );

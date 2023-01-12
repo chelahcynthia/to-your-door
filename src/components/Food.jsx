@@ -77,8 +77,8 @@ function Food(props) {
             
               <Row xs={1} md={2} className="g-4">
                
-                {foodData.map((food, idx) =>
-            <Col>
+                {foodData.map((food, key) =>
+            <Col key={food.id}>
               <Card className="food-card">
             <Card.Img src={food.path} />
             <Card.Body>

@@ -3,29 +3,29 @@ import { Link} from "react-router-dom"
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
-
+import { productsArray } from "../productsStore";
 import "./Food.css";
 import { CardGroup } from "react-bootstrap";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 function Food() {
 
-  const [foodData, setFoodData] = useState([])
+  // const [foodData, setFoodData] = useState([])
 
  
-  const fetchData = () => {
-    fetch("http://localhost:8000/foods")
-      .then((res) => res.json())
-      .then((data) =>
-      setFoodData(data));
-  };
+  // const fetchData = () => {
+  //   fetch("http://localhost:8000/foods")
+  //     .then((res) => res.json())
+  //     .then((data) =>
+  //     setFoodData(data));
+  // };
  
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
   return (
     <>
-            <Row xs={1} md={2} className="g-4">
+            {/* <Row xs={1} md={2} className="g-4">
             {foodData.map((food, key) =>
             <Col key={food.id}>
               <Card className="food-card">
@@ -58,9 +58,42 @@ function Food() {
          </Form>
         </Col>
         )}
-              </Row>
+              </Row> */}
 
-         
+
+            <Row xs={1} md={2} className="g-4">
+            {productsArray.map((product, idx) =>
+            <Col key = {idx}>
+              <Card className="product-card">
+            <Card.Img src={product.path} />
+            <Card.Body>
+            <Card.ImgOverlay>
+              <Card.Title className="title-color">{product.mealName}</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted subtitle-color">Price: {product.price}</Card.Subtitle>
+              <Card.Text className="text-color">
+               {product.description}
+              </Card.Text>
+                  <Form>
+                  <Form.Group className="quantity-box">
+                    <div className="order-action">
+                    <Form.Control type="number" placeholder="QTY"></Form.Control>
+                  <Link to="/cart">
+                  <Button variant="secondary">ADD TO CART</Button>
+                  </Link>
+                    </div>
+                 
+                  </Form.Group>
+                 
+                </Form>
+              </Card.ImgOverlay>
+            </Card.Body>
+          </Card>
+         <Form>
+          
+         </Form>
+        </Col>
+        )}
+              </Row>
        
            
      

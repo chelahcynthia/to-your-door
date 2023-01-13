@@ -17,9 +17,44 @@ getTotalCost: () => {}
     // state that is specific for our provider
 
     function getFoodQuantity(id){
-        cartProducts.find(food => food.id === id).quantity
-        // checks if food id is equal to the id we pass in
+        cartProducts.find(food => food.id === id)?.quantity
+        // checks if food id is equal to the id we pass in and gets its quantity but only if the food id is not undefined
+        if (quantity === undefined){
+            return 0;
+        }
+        return quantity
     }
+
+    function addOneToCart(id){
+        const quantity = getFoodQuantity(id)
+
+        // if there's zero or one elements
+        if(quantity === 0) { //product is not in cart
+            setCartItems(
+                [
+
+                    ...cartItems,
+                    {
+                        id:id,
+                        quantity: 1
+                    }
+                
+                ]
+            )
+          //concats what
+        } else { //product is in cart
+            setCartItems(
+            cartItems.map(
+            food =>
+            food.id === id 
+            ?{...food, quantity: food.quantity + 1}
+            :food
+                    )
+                )
+            }
+    }
+
+    
 
 
     const contextValue = {

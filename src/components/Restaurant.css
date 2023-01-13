@@ -7,8 +7,9 @@
 .picture-div {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 270px 270px 270px;
     gap: 1.5rem;
+    margin: .3rem 1.5rem 0 1.5rem;
 }
 
 img {

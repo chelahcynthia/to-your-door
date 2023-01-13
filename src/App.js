@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Cart from "./components/Cart";
@@ -11,6 +11,8 @@ import Restaurant from "./components/Restaurant"
 import "./App.css";
 
 function App() {
+
+ 
   return (
     <>
       <NavBar />

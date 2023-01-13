@@ -18,6 +18,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
+     
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,6 +27,7 @@ function App() {
         <Route path="/login" element={<LogIn />} />
         <Route path="/food" element={<Food />} />
       </Routes>
+     
     </>
   );
 }

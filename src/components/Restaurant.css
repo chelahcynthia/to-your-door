@@ -6,7 +6,7 @@
 
 .picture-div {
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 270px 270px 270px;
     gap: 1.5rem;
     margin: .3rem 1.5rem 0 1.5rem;
@@ -18,9 +18,21 @@ img {
    object-fit: cover; 
 }
 
-.img-card {
+.img-card1, .img-card2, .img-card3, .img-card4, .img-card5, .img-card6 {
     overflow: hidden;
     width: 100%;
     height: 100%;
     border-radius: 5px;
+}
+
+.img-card2 {
+    grid-column: span 2;
+}
+
+.img-card3 {
+    grid-column: span 2;
+}
+
+.img-card6 {
+    grid-column: span 2;
 }

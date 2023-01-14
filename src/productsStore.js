@@ -25,7 +25,16 @@ const productsArray = [
             path: "https://cdn.pixabay.com/photo/2021/04/23/07/42/salad-6200957_1280.jpg",
             category:"Salad",
             
-            }
+            },
+            {
+                id:"4",
+                mealName: "Macarons",
+                price: 200,
+                description: "Yum!",
+                path: "https://cdn.pixabay.com/photo/2017/07/28/14/23/macarons-2548810_1280.jpg",
+                category:"Snacks",
+                
+                }
 ]
 // to get data form only id in cart maybe?
 function getProductData(id){

@@ -29,6 +29,7 @@ img {
     height: 100%;
     border-radius: 10px;
     text-align: center;
+    animation: fadeLeftImage 4s both;
 }
 
 .img-card2 {

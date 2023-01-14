@@ -53,7 +53,7 @@ function NavBar() {
                 <i className="fa fa-sign-in"></i>LogIn
               </NavLink>
             </li>
-            
+            <button className="cart-button">cart 0 items </button>
           </ul>
         </div>
       </nav>

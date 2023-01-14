@@ -16,7 +16,7 @@ function Home() {
         <i className="fa fa-cutlery"></i>Order Now
       </Link>
 
-      <a href="/food">food</a>
+      
     </div>
   );
 }

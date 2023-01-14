@@ -3,42 +3,42 @@ import { Link} from "react-router-dom"
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
-// import { productsArray } from "../productsStore";
+import { productsArray } from "../productsStore";
 import "./Food.css";
 import { CardGroup } from "react-bootstrap";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 function Food() {
 
-  const [foodData, setFoodData] = useState([])
+  // const [foodData, setFoodData] = useState([])
 
  
-  const fetchData = () => {
-    fetch("http://localhost:8000/foods")
-      .then((res) => res.json())
-      .then((data) =>
-      setFoodData(data));
-  };
+  // const fetchData = () => {
+  //   fetch("http://localhost:8000/foods")
+  //     .then((res) => res.json())
+  //     .then((data) =>
+  //     setFoodData(data));
+  // };
  
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
   return (
     <>
             <Row xs={1} md={2} className="g-4">
-            {foodData.map((food, ) =>
-            <Col key={food.id}>
+            {productsArray.map((product, ) =>
+            <Col key={product.id}>
               <Card className="food-card">
-            <Card.Img src={food.path} />
+            <Card.Img src={product.path} />
             <Card.Body>
             <Card.ImgOverlay>
-              <Card.Title className="title-color">{food.mealName}</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted subtitle-color">Price: {food.price}</Card.Subtitle>
+              <Card.Title className="title-color">{product.mealName}</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted subtitle-color">Price: {product.price}</Card.Subtitle>
               
               <Card.Text className="text-color">
-               {food.description}
+               {product.description}
               </Card.Text>
-              <Card.Text className="food-cat">{food.category}</Card.Text>
+              <Card.Text className="food-cat">{product.category}</Card.Text>
                   <Form>
                   <Form.Group className="quantity-box">
                     <div className="order-action">

@@ -6,8 +6,12 @@ import Profile from "./components/Profile";
 import LogIn from "./components/LogIn";
 import SignUp from "./components/SignUp"
 import NavBar from "./components/NavBar";
+<<<<<<< HEAD
 import About from "./components/About";
 
+=======
+import Restaurant from "./components/Restaurant"
+>>>>>>> b8e88fa483d35e10e0169eaa71d1c96d9eb77689
 import "./App.css";
 
 function App() {
@@ -22,6 +26,11 @@ function App() {
         <Route path="/login" element={<LogIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/about" element={<About />} />
+<<<<<<< HEAD
+=======
+
+        <Route path="/restaurant" element={<Restaurant />} />
+>>>>>>> b8e88fa483d35e10e0169eaa71d1c96d9eb77689
       </Routes>
 
       

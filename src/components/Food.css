@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .text-color
 {
     color: azure;
@@ -17,3 +18,41 @@
 {
     color: aqua;
 }
+=======
+
+.text-color
+{
+    color: black;
+}
+.title-color
+{
+    color:  black;
+}
+.subtitle-color
+{
+    color:  black;
+}
+
+/* this is the card for the food details */ 
+ .food-card{
+    position:relative;
+}
+.quantity-box
+{
+    bottom:50px;
+   position:absolute;
+    width:160px;
+    right:20px;
+    padding:10px;
+}
+/* food category text */
+.food-cat {
+    position:absolute;
+    left: 1.75rem;
+    bottom:3rem;
+}
+
+
+
+
+>>>>>>> 5fab2015ea8f0fc19cfd3e575a6c069a41412689

@@ -1,9 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import {MdDeliveryDining} from 'react-icons/md'
+import { Modal } from 'react-bootstrap'
 import "./NavBar.css";
+import {useState} from 'react'
 
 function NavBar() {
+  const [show, setShow] = useState(false);
+  // for the modal and is set to false so that the modal doesnt show
+  const handleClose = () => setShow(false)
+  // this checks for the close event and hides the modal
+  const handleShow = () => setShow(true)
+  // for showing the modal
   return (
     <>
       <nav className="navbar">
@@ -20,10 +28,20 @@ function NavBar() {
               </NavLink>
             </li>
             <li>
-              <NavLink className="navlink" to="/cart">
+              <NavLink className="navlink" onClick={handleShow}>
                 <i className="fa fa-shopping-cart"></i>Cart
+               
               </NavLink>
             </li>
+            {/* this is the modal for showing the cart items */}
+                  <Modal show={show} onHide={handleClose}>
+                  <Modal.Header closeButton>
+                    <Modal.Title>Shopping Cart</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <h1>This is the modal body</h1>
+                  </Modal.Body>
+                </Modal>
 
             <li>
               <NavLink className="navlink" to="/profile">

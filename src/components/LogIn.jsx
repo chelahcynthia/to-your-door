@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./LogIn.css";
 
 function LogIn({onLogIn}) {
@@ -22,13 +23,10 @@ function LogIn({onLogIn}) {
       "Content-Type": "application/json",
      },
      body: JSON.stringify(formData), 
-    }).then((r) => {
-      if (r.ok) {
-        r.json().then((user) => onLogIn(user));
-      } else {
-        r.json().then((err) => alert(err.error));
-      }
-    });
+    })
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((err) => console.error(err))
   }
 
   return (
@@ -64,7 +62,7 @@ function LogIn({onLogIn}) {
           <button type="submit" onClick={(e) => handleSubmit(e)} id="login-btn">Login</button>
           <div className="links">
             <p>Don't have an account?&nbsp;</p>
-            <a href="#">Signup</a>
+            <Link to="/signup">Signup</Link>
           </div>
         </form>
       </div>

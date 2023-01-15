@@ -37,14 +37,5 @@ const productsArray = [
                 }
 ]
 // to get data form only id in cart maybe?
-function getProductData(id){
-    let productData = productsArray.find(product => product.id === id)
 
-    // error handling
-    if (productData === undefined) {
-        console.log("Prouct data does not exist for ID: " + id);
-        return undefined
-    }
-    return productData;
-}
-export {productsArray , getProductData}; //allows to give this data to any component in this project
+export {productsArray }; //allows to give this data to any component in this project

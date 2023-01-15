@@ -1,14 +1,25 @@
-import React, { useState, useEffect }  from "react";
+import React from "react";
 import { Link} from "react-router-dom"
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import { productsArray } from "../productsStore";
 import "./Food.css";
+// import { CartContext } from "../CartContext"
+// import { useContext } from "react";
 import { CardGroup } from "react-bootstrap";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+
+
+
+
 function Food() {
+
+// const product = props.product;
+// const cart = useContext(CartContext)
+// const productQuantity = cart.getProductQuantity(product.id)
+
 
   // const [foodData, setFoodData] = useState([])
 
@@ -25,8 +36,9 @@ function Food() {
   // }, []);
   return (
     <>
-            <Row xs={1} md={2} className="g-4">
-            {productsArray.map((product, ) =>
+   
+    <Row xs={1} md={2} className="g-4">
+            {productsArray.map((product) =>
             <Col key={product.id}>
               <Card className="food-card">
             <Card.Img src={product.path} />
@@ -61,12 +73,7 @@ function Food() {
         )}
               </Row>
 
-
-          
-
-         
-      
-   
+  
     </>
   );
 }

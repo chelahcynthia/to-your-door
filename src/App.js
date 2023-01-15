@@ -18,7 +18,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
-     
+ {/* the cartprovider component is wrapped in the outside to make it accessible to all the components */}
+ 
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -27,6 +28,8 @@ function App() {
         <Route path="/login" element={<LogIn />} />
         <Route path="/food" element={<Food />} />
       </Routes>
+   
+     
      
     </>
   );

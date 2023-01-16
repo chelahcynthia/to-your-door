@@ -12,7 +12,7 @@ const SingleProduct = ({prod}) => {
     return (
 <>
 {/* //the outside container */}
-<div> 
+{/* <div> 
 
 <img src={prod.path} alt="" />
 <h3>{prod.mealName}</h3>
@@ -47,8 +47,8 @@ const SingleProduct = ({prod}) => {
 </div>
 </form>
 
-</div>
-        {/* <Row xs={1} md={2} className="g-4">
+</div> */}
+        <Row xs={1} md={2} className="g-4">
         <Col key = {prod.id}>
           <Card className="food-card">
         <Card.Img src={prod.path} />
@@ -89,7 +89,7 @@ const SingleProduct = ({prod}) => {
      <Form>
      </Form>
     </Col>
-          </Row> */}
+          </Row>
 </>
       //get the boilerplate removed
 

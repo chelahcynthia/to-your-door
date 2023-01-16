@@ -1,14 +1,10 @@
 import React, {useState} from "react";
 import { Link} from "react-router-dom"
 import "./LogIn.css";
-
-
-
 function LogIn({onLogIn, setUser}) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState();
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = {

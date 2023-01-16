@@ -5,9 +5,7 @@ import "./LogIn.css";
 function LogIn({onLogIn}) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [errors, setErrors] = useState({
-    error: "",
-  });
+  const [errors, setErrors] = useState();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,9 +22,22 @@ function LogIn({onLogIn}) {
      },
      body: JSON.stringify(formData), 
     })
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((err) => console.error(err))
+    .then((response) => {
+      if (response.status > 199 && response.status < 300) {
+        response.json()
+        .then((data) => {
+          console.log(data);
+          localStorage.setItem("user", JSON.stringify(data.customer))
+          localStorage.setItem("token", data.jwt)
+        })
+      } else {
+        response.json()
+        .then((err) => {
+          console.log(err);
+          setErrors(err.error)
+        })
+      }
+    })
   }
 
   return (
@@ -35,6 +46,7 @@ function LogIn({onLogIn}) {
         <h6>Welcome to</h6>
         <h1>To Your Door App</h1>
       </div>
+      <div className="errors" style={{color:"red", margin: "1rem"}}>{errors}</div>
       <div className="main">
         <form>
           <span>

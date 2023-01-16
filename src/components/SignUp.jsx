@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import "./SignUp.css";
 
 function SignUp() {
+  const [errors, setErrors] = useState()
   const [formData, setFormData] = useState({
     first_name: "",
+    last_name: "",
     email: "",
     username: "",
     password: "",
@@ -12,7 +14,22 @@ function SignUp() {
   });
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    
+    fetch("http://localhost:3000/signup", {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data)
+      localStorage.setItem("user", JSON.stringify(data.customer))
+      localStorage.setItem("token", data.token)
+    })
+    .catch((err) => console.error(err))
+    
   };
 
   return (
@@ -29,7 +46,15 @@ function SignUp() {
             onChange={(e) =>
               setFormData({ ...formData, first_name: e.target.value })
             }
-            placeholder="Full name"
+            placeholder="First name"
+          ></input>
+          <input
+            type="text"
+            name=""
+            onChange={(e) =>
+              setFormData({ ...formData, last_name: e.target.value })
+            }
+            placeholder="Last name"
           ></input>
           <input
             type="email"

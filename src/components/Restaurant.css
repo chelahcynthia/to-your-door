@@ -1,6 +1,3 @@
-* {
-    cursor: pointer;
-}
 
 .restaurant-heading {
     margin-top: .5rem;
@@ -26,9 +23,8 @@ img {
     overflow: hidden;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
-    animation: fadeLeftImage 4s both;
 }
 
 .img-card2 {

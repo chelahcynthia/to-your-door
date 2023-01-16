@@ -2,7 +2,7 @@ import React from 'react'
 import "./Profile.css"
 
 
-function Profile() {
+function Profile({user}) {
   return (
     <>
       <div className='prof-container'>
@@ -11,7 +11,7 @@ function Profile() {
       </div>
      <div className='profile'>
       <div className='prof-header'>
-        <h1>Hi, Chelah!</h1>
+        <h1>Welcome, {user}!</h1>
         <p>We have a new meal in Restaurant 02! Try it now!</p>
         <h3>Your Favorite Meals</h3>         
       </div> 
@@ -44,7 +44,7 @@ function Profile() {
           <i class="fa fa-trash" aria-hidden="true"></i>
         </div>
 
-        <div className='card'>
+        {/* <div className='card'>
           <img src="https://img.freepik.com/free-photo/chicken-skewers-with-slices-sweet-peppers-dill_2829-18813.jpg?w=1380&t=st=1672986735~exp=1672987335~hmac=2ce74dfba4228412b7afe5eba4c5ac8bb4b3cb6e12b00f875f09b31fdec3985d" alt="" />
         </div>  
 
@@ -54,7 +54,7 @@ function Profile() {
           <p>Ksh. 1800.00</p>
           </div>          
           <i class="fa fa-trash" aria-hidden="true"></i>
-        </div>
+        </div> */}
     </div> 
     </>    
     

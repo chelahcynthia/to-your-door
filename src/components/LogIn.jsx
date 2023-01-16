@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import { Link} from "react-router-dom"
 import "./LogIn.css";
 
+
+
 function LogIn({onLogIn, setUser}) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -60,7 +62,9 @@ function LogIn({onLogIn, setUser}) {
             <input type="password" placeholder="password" name=""></input>
           </span>
           <br></br>
+
           <button type="submit" onClick={(e) => handleSubmit(e)} id="login-btn"><Link to="/profile">Login</Link></button>
+
           <div className="links">
                 <p>Don't have an account?&nbsp;</p>
                 <a href="#">Signup</a>

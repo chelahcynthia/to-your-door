@@ -16,11 +16,10 @@ const SingleProduct = ({prod}) => {
     console.log(cart)
     return (
         <Row xs={1} md={2} className="g-4">
-     
-      
         <Col key = {prod.id}>
           <Card className="food-card">
         <Card.Img src={prod.path} />
+       
         <Card.Body>
         <Card.ImgOverlay>
           <Card.Title className="title-color">{prod.mealName}</Card.Title>
@@ -33,7 +32,7 @@ const SingleProduct = ({prod}) => {
               <Form>
               <Form.Group className="quantity-box">
                 <div className="order-action">
-                <Form.Control type="number" placeholder="QTY"></Form.Control>
+               
                 
                 {/* <Button variant="secondary" >ADD TO CART</Button> */}
              {cart.some((p) => p.id === prod.id) ? (

@@ -1,7 +1,48 @@
 import React from "react";
 import "./LogIn.css";
 
-function LogIn() {
+
+
+function LogIn({onLogIn, setUser}) {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = {
+      username:username,
+      password:password
+    }
+    console.log(formData);
+    setUser(username)
+
+    fetch("http://localhost:3000/login", {
+     method: "POST",
+     headers: {
+      "Content-Type": "application/json",
+     },
+     body: JSON.stringify(formData), 
+    })
+    .then((response) => {
+      if (response.status > 199 && response.status < 300) {
+        response.json()
+        .then((data) => {
+          console.log(data);
+          localStorage.setItem("user", JSON.stringify(data.customer))
+          localStorage.setItem("token", data.jwt)
+        })
+      } else {
+        response.json()
+        .then((err) => {
+          console.log(err);
+          setErrors(err.error)
+        })
+      }
+    })
+  }
+
+
   return (
     <div className="container">
       <div className="header">
@@ -21,7 +62,9 @@ function LogIn() {
             <input type="password" placeholder="password" name=""></input>
           </span>
           <br></br>
-          <button id="login-btn">Login</button>
+
+          <button type="submit" onClick={(e) => handleSubmit(e)} id="login-btn"><Link to="/profile">Login</Link></button>
+
           <div className="links">
                 <p>Don't have an account?&nbsp;</p>
                 <a href="#">Signup</a>

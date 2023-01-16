@@ -58,7 +58,7 @@ function NavBar() {
                             <span>Ksh {prod.price}</span>
                           </div>
                         
-                          <Button fontSize = "20px" style={{cursor:"pointer", margin:".75rem"}} onClick={()=>
+                          <Button fontSize = "20px" variant="danger" style={{cursor:"pointer", margin:".75rem"}} onClick={()=>
                           dispatch({
                             type: "REMOVE_FROM_CART",
                             payload:prod,

@@ -1,64 +1,47 @@
-// import React from "react";
+import React, {useState, useEffect} from "react";
+import { Link} from "react-router-dom"
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
+ import {products } from "../productsStore";
+ import Cart from "./Cart";
+// import { getProductData } from "../productsStore";
 import "./Food.css";
-import { GiOpenBook} from "react-icons/gi";
-import React, {useEffect, useState} from "react";
+// import { CartContext } from "../CartContext"
+// import { useContext } from "react";
+import { CardGroup } from "react-bootstrap";
+// import Col from 'react-bootstrap/Col';
+// import Row from 'react-bootstrap/Row';
+import { CartState } from "../Context";
+
+import SingleProduct from "./SingleProduct";
 
 function Food() {
+const {state: {products},} = CartState();
+// console.log(products);
 
   const [foodData, setFoodData] = useState([])
 
-  const fetchData = () => {
+ 
+  useEffect(() => {
     fetch("http://localhost:9000/meals")
     .then((res) => res.json())
     .then((data) =>
     setFoodData(data));
-  };
-  useEffect(() => {
-    fetchData(foodData);
   }, []);
+
+  console.log(foodData)
 
 
   return (
     <>
-    <h2 className='food-heading'> Menu <GiOpenBook/> </h2>
-      {/* <Row xs={1} md={2} className="g-4">
-            {foodData.map((foodData) =>
-          
-            <Col key = {foodData.id} foodData = {foodData}>
-              <Card className="food-card">
-            <Card.Img src={foodData.path} />
-            <Card.Body>
-            <Card.ImgOverlay>
-              <Card.Title className="title-color">{product.mealName}</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted subtitle-color">Price: {product.price}</Card.Subtitle>
-              
-              <Card.Text className="text-color">
-               {product.description}
-              </Card.Text>
-              <Card.Text className="food-cat">{product.category}</Card.Text>
-                  <Form>
-                  <Form.Group className="quantity-box">
-                    <div className="order-action">
-                    <Form.Control type="number" placeholder="QTY"></Form.Control>
-                    
-                    <Button variant="secondary" >ADD TO CART</Button>
-                 
-                    </div>
-                  </Form.Group>
-                </Form>
-              </Card.ImgOverlay>
-            </Card.Body>
-          </Card>
-         <Form>
-          
-         </Form>
-        </Col>
-        )}
-              </Row> */}
-    </>
+              <div>{foodData.map((meal)=> {
+                return <SingleProduct meal = {meal} key = {meal.id} />
+              })}</div>
+           
+
+
+</>
   );
 }
 export default Food;

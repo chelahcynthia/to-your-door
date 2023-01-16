@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./LogIn.css";
 
-function LogIn({onLogIn}) {
+function LogIn({onLogIn, setUser}) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState();
@@ -14,6 +14,7 @@ function LogIn({onLogIn}) {
       password:password
     }
     console.log(formData);
+    setUser(username)
 
     fetch("http://localhost:3000/login", {
      method: "POST",

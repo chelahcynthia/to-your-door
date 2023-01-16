@@ -38,12 +38,11 @@ function NavBar() {
             <li>
               <NavLink className="navlink" onClick={handleShow}>
                 <i className="fa fa-shopping-cart"></i>Cart
-               
+              
+                
               </NavLink>
               <Badge>{cart.length}</Badge>
-            </li>
-            {/* this is the modal for showing the cart items */}
-                  <Modal show={show} onHide={handleClose}>
+              <Modal show={show} onHide={handleClose}>
                   <Modal.Header closeButton>
                     <Modal.Title>Shopping Cart</Modal.Title>
                   </Modal.Header>
@@ -77,6 +76,9 @@ function NavBar() {
                     )}
                   </Modal.Body>
                 </Modal>
+            </li>
+            {/* this is the modal for showing the cart items */}
+             
 
             <li>
               <NavLink className="navlink" to="/profile">

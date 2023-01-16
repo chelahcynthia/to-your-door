@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./LogIn.css";
 
 
@@ -49,6 +51,8 @@ function LogIn({onLogIn, setUser}) {
         <h6>Welcome to</h6>
         <h1>To Your Door App</h1>
       </div>
+      
+      <div className="errors" style={{color:"red", margin: "1rem"}}>{errors}</div>
       <div className="main">
         <form>
           <span>
@@ -67,7 +71,7 @@ function LogIn({onLogIn, setUser}) {
 
           <div className="links">
                 <p>Don't have an account?&nbsp;</p>
-                <a href="#">Signup</a>
+                <Link to="/signup">Signup</Link>
             </div>
         </form>
         

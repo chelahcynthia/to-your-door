@@ -3,10 +3,11 @@ import { NavLink } from "react-router-dom";
 import {MdDeliveryDining} from 'react-icons/md'
 import { Modal, Badge } from 'react-bootstrap'
 import "./NavBar.css";
+import Cart from "./Cart";
 import {useState} from 'react'
 import { cartReducer } from "../Reducers";
 import { CartState } from "../Context";
-
+import { Link} from "react-router-dom"
 import Button from "react-bootstrap/Button";
 //  import {AiFillDelete} from "react-icons/ai"
 function NavBar() {
@@ -52,17 +53,13 @@ function NavBar() {
                       <>
                       {cart.map(prod => (
                         <span className = "cartitem" key="prod.key">
-                          <img src={prod.path} alt={prod.mealName} />
+                          <img className="cartItemImg" src={prod.path} alt={prod.mealName} />
                           <div className ="cartItemDetail">
                             <span>{prod.mealName} </span>
                             <span>Ksh {prod.price}</span>
                           </div>
-                          {/* <AiFillDelete fontSize = "20px" style={{cursor:"pointer"}} onClick={()=>
-                          dispatch({
-                            type: "REMOVE_FROM_CART",
-                            payload:prod,
-                          })} /> */}
-                          <Button fontSize = "20px" style={{cursor:"pointer"}} onClick={()=>
+                        
+                          <Button fontSize = "20px" style={{cursor:"pointer", margin:".75rem"}} onClick={()=>
                           dispatch({
                             type: "REMOVE_FROM_CART",
                             payload:prod,
@@ -70,7 +67,11 @@ function NavBar() {
                         </span>
 
                       ))
-                      }</>
+                      }
+                      <Link to="/cart">
+                        <Button style={{width: "95%", margin: "0 10px"}}>Go to Cart</Button>
+                      </Link>
+                      </>
                     ): (
                       <span>Cart Is Empty!</span>
                     )}

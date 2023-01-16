@@ -7,6 +7,7 @@ const
         description: "Yum!",
         path:"https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1cmdlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
         category: "Snacks",
+        inStock: [0]
      
         },
         {
@@ -15,8 +16,8 @@ const
         price: 300,
         description: "Yum!",
         path: "https://cdn.pixabay.com/photo/2016/01/22/02/13/meat-1155132_1280.jpg",
-        category:"Meats"
-        
+        category:"Meats",
+        inStock: [15]
         }
         // {
         //     id:"3",

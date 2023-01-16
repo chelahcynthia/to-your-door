@@ -44,12 +44,12 @@ const SingleProduct = ({prod}) => {
                     })
                  }} variant="danger">Remove from Cart</Button>
                 
-             ): (<Button onClick = {()=> {
+             ): (<Button disabled={!prod.inStock} onClick = {()=> {
                 dispatch({
                     type: "ADD_TO_CART",
                     payload: prod,
                 })
-             }}>Add to Cart</Button>)}
+             }}>{!prod.inStock ? "Out of Stock": "Add to Cart"}</Button>)}
                 </div>
               </Form.Group>
             </Form>

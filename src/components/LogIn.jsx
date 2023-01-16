@@ -46,6 +46,7 @@ function LogIn({onLogIn}) {
         <h6>Welcome to</h6>
         <h1>To Your Door App</h1>
       </div>
+      
       <div className="errors" style={{color:"red", margin: "1rem"}}>{errors}</div>
       <div className="main">
         <form>

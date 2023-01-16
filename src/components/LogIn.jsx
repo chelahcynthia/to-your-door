@@ -72,7 +72,7 @@ function LogIn({onLogIn, setUser}) {
             ></input>
           </span>
           <br></br>
-          <button type="submit" onClick={(e) => handleSubmit(e)} id="login-btn">Login</button>
+          <button type="submit" onClick={(e) => handleSubmit(e)} id="login-btn"><Link to="/profile">Login</Link></button>
           <div className="links">
             <p>Don't have an account?&nbsp;</p>
             <Link to="/signup">Signup</Link>

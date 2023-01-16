@@ -29,15 +29,7 @@ useEffect(() => {
             {prod.price}
           </Col>
           <Col>
-          {/* <Form.Control as="select" value={prod.qty}
-          onChange={(e) => dispatch({type: "CHANGE_CART_QTY", payload:{
-            id:prod.id,
-            qty: e.target.value,
-          }})}>
-            {[...Array(prod.inStock).keys()].map((x) => (
-              <option key={x + 1}>{x + 1}</option>
-            ))}
-          </Form.Control> */}
+       
           <Form.Control type="number" placeholder="QTY" value={prod.qty}
           onChange={(e) => dispatch({type: "CHANGE_CART_QTY", payload:{
             id:prod.id,

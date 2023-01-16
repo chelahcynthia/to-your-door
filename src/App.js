@@ -11,7 +11,7 @@ import Restaurant from "./components/Restaurant"
 import "./App.css";
 
 function App() {
-
+  const [user, setUser] = useState("User")
  
   return (
     <>
@@ -19,8 +19,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/login" element={<LogIn />} />
+        <Route path="/profile" element={<Profile user={user}/>} />
+        <Route path="/login" element={<LogIn setUser={setUser}/>} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/about" element={<About />} />
 

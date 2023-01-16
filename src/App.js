@@ -1,21 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import Cart from "./components/Cart";
+import {Cart} from "./components/Cart";
 import Profile from "./components/Profile";
 import LogIn from "./components/LogIn";
 import SignUp from "./components/SignUp"
 import About from "./components/About";
 import NavBar from "./components/NavBar";
-
 import Food from "./components/Food"
-
 import Restaurant from "./components/Restaurant"
-
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+
+
+
   return (
     <>
  {/* the cartprovider component is wrapped in the outside to make it accessible to all the components */}
@@ -27,6 +27,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<LogIn />} />
         <Route path="/food" element={<Food />} />
+       
       </Routes>
    
      

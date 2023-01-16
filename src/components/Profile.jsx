@@ -11,7 +11,7 @@ function Profile({user}) {
       </div>
      <div className='profile'>
       <div className='prof-header'>
-        <h1>Hi, {user}!</h1>
+        <h1>Welcome, {user}!</h1>
         <p>We have a new meal in Restaurant 02! Try it now!</p>
         <h3>Your Favorite Meals</h3>         
       </div> 

@@ -7,7 +7,7 @@
 .about-container {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 190px 190px 190px 190px;
+    grid-template-rows: 150px 150px 150px 150px;
     gap: 1.5rem;
     margin: .3rem 1.5rem 0 1.5rem;
 }

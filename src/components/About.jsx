@@ -19,7 +19,7 @@ function About() {
           <h3>40 COUNTIES</h3>
         </div>
         <div className='about-card5'>
-          <h4>10K COURIERS AND EMPLOYEES</h4>
+          <h3>10K COURIERS AND EMPLOYEES</h3>
         </div>
         <div className='about-card6'>
           <p>We're a Kenyan tech company and the fastest-growing multicategory player in Africa. With technology at the core of our business, we create innovative solutions that connect customers, businesses and couriers.</p>

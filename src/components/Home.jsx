@@ -9,7 +9,7 @@ function Home() {
     <div className="home-container">
       <Link to="/about" className="delivery-btn">
         <i className="fa fa-map-marker"></i>
-          Enter Delivery Address
+          About Us 
       </Link>
     
       <Link to="/restaurant" className="order-btn">

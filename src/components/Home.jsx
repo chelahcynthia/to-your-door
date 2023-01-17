@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="home-container">
       <Link to="/about" className="delivery-btn">
-        <i className="fa fa-map-marker"></i>
+        <i className="fa fa-user aria-hidden=true"></i>
           About Us 
       </Link>
       <Link to="/restaurant" className="order-btn">

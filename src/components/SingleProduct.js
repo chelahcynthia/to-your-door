@@ -1,11 +1,12 @@
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+// import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import React from "react";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
+// import Row from "react-bootstrap/Row";
 import { CartState } from "../Context";
-
+// import './Food.css'
+import './singleProduct.css'
 const SingleProduct = ({ foodData }) => {
   const {
     state: { cart },
@@ -20,15 +21,15 @@ const SingleProduct = ({ foodData }) => {
           <>
             <div className="foodCard">
               
-              <img src={food.img_url}/>
+              <img src={food.img_url} alt='food-item'/>
               
               <p>{food.foodName}</p>
               <p>{food.price}</p>
               <p>{food.description}</p>
               <p>{food.category}</p>
               <Form>
-           <Form.Group className="quantity-box">
-             <div className="order-action">
+              <Form.Group className="quantity-box">
+                <div className="order-action">
                          
             
           {cart.some((p) => p.id === food.id) ? (

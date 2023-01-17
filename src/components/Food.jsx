@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 // import { getProductData } from "../productsStore";
-import "./Food.css";
+// import "./Food.css";
 // import { CartState } from "../Context";
 import SingleProduct from "./SingleProduct";
 

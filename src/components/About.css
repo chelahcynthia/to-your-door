@@ -6,8 +6,12 @@
 
 .about-container {
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 200px 200px 200px 200px;
     gap: 1.5rem;
     margin: .3rem 1.5rem 0 1.5rem;
+}
+
+.about-card2, .about-card3, .about-card6, .about-card7 {
+    grid-column: span 2;
 }

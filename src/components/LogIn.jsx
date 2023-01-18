@@ -1,7 +1,6 @@
 
 import React, {useState} from "react";
 
-import React, { useState } from "react";
 
 import "./LogIn.css";
 

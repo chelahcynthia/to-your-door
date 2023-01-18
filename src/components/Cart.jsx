@@ -10,6 +10,7 @@ const Cart = () => {
 const {state: { cart}, dispatch,} = CartState();
 const [total, setTotal] = useState("");
 const [num, setNum] = useState(0);
+const [show, setShow] = useState(false)
 // function for calculating random number
 function randomNumberInRange(min, max) {
   // 👇️ get number between min (inclusive) and max (inclusive)
@@ -64,7 +65,9 @@ useEffect(() => {
       <div className='filters summary'>
         <span className="title">Subtotal({cart.length}) items</span>
         <span style={{fontWeight: 700, fontSize: 20}}>Total: Ksh {total}</span>
-        <h2>Your order will arrive in {num} minutes.</h2>
+     
+       {show && <h2>Your order will arrive in {num} minutes.</h2>}
+       <Button onClick={()=> setShow(!show)}>Add Delivery?</Button> 
         <Button type="button" onClick={handleClick} disabled={cart.length === 0}>Proceed to Checkout</Button>
       </div>
     </div>

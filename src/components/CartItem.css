@@ -1,0 +1,10 @@
+.cartitem {
+    display: flex;
+    width: 100%;
+}
+
+
+.cartItemImg {
+    width: 100px;
+    object-fit: cover;
+}

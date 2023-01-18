@@ -35,6 +35,20 @@ function NavBar() {
                 <i className="fa fa-fw fa-home"></i>Home
               </NavLink>
             </li>
+            
+             
+
+            <li>
+              <NavLink className="navlink" to="/profile">
+                <i className="fa fa-fw fa-user"></i>Profile
+                
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="navlink" to="/login">
+                <i className="fa fa-sign-in"></i>My Account
+              </NavLink>
+            </li>
             <li>
               <NavLink className="navlink" onClick={handleShow}>
                 <i className="fa fa-shopping-cart"></i>Cart
@@ -78,19 +92,6 @@ function NavBar() {
                 </Modal>
             </li>
             {/* this is the modal for showing the cart items */}
-             
-
-            <li>
-              <NavLink className="navlink" to="/profile">
-                <i className="fa fa-fw fa-user"></i>Profile
-                
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="navlink" to="/login">
-                <i className="fa fa-sign-in"></i>LogIn
-              </NavLink>
-            </li>
           </ul>
         </div>
       </nav>

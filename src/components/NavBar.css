@@ -24,6 +24,7 @@
   letter-spacing: 1px;
   opacity: 0.8;
   color: #ffffff;
+  font-weight: 800;
 }
 
 .navbar-nav {
@@ -43,13 +44,14 @@
 
 .navbar-nav > ul > li > a {
   color: #ffffff;
+  font-weight: 800;
   padding: 0.5rem 0.8rem;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   border-radius: 10px;
 }
 .navlink:hover {
-  color: #00a3ff;
+  color: black;
 }
 .cartItemImg{
   border-radius: 50%;
@@ -65,4 +67,7 @@
 }
 .summary{
   width: 30%;
+}
+.delivery-icon{
+  color: #ffffff;
 }

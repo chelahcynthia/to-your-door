@@ -5,12 +5,10 @@
   padding: 0;
 }
 body {
-  background:linear-gradient(
-    rgba(252, 240, 240, 0.45), 
-    rgba(255, 255, 255, 0.45)
-  ),
+  background:
+    
   
-  url("https://res.cloudinary.com/dphlf7a8o/image/upload/v1671448384/pexels-jane-doan-1128678_mqdf0i.jpg");
+  url("https://res.cloudinary.com/dphlf7a8o/image/upload/v1674035293/chipo_gii99h.jpg");
   background-position: center;
   display: flex;
   width: 100%;

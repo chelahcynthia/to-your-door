@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f5f5f5;
+  background: #004aad;
 }
 
 .navbar-brand {
@@ -15,7 +15,7 @@
   align-items: center;
   font-weight: bold;
   margin-left: 1rem;
-  color: black;
+  color: #ffffff;
   
 }
 
@@ -23,7 +23,7 @@
   font-size: 25px;
   letter-spacing: 1px;
   opacity: 0.8;
-  color: black;
+  color: #ffffff;
 }
 
 .navbar-nav {
@@ -42,7 +42,7 @@
 }
 
 .navbar-nav > ul > li > a {
-  color: black;
+  color: #ffffff;
   padding: 0.5rem 0.8rem;
   text-decoration: none;
   transition: all 0.2s ease-in-out;

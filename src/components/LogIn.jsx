@@ -23,6 +23,7 @@ function LogIn({onLogIn, setUser}) {
       username:username,
       password:password
     }
+    setUser(username)
 
     fetch("http://localhost:3000/login", {
      method: "POST",
@@ -70,7 +71,7 @@ function LogIn({onLogIn, setUser}) {
           </span>
           <br></br>
 
-          <button type="submit" onClick={(e) => handleSubmit(e)} id="login-btn">Login</button>
+          <button type="submit" onClick={(e) => handleSubmit(e)} id="login-btn"><Link to="/profile">Login</Link></button>
 
           <div className="links">
                 <p>Don't have an account?&nbsp;</p>

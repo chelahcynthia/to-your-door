@@ -1,4 +1,8 @@
+
 import React, {useState} from "react";
+
+import React, { useState } from "react";
+import { Link } from "react-rou
 import "./LogIn.css";
 import { Link } from "react-router-dom";
 
@@ -11,12 +15,13 @@ function LogIn({onLogIn, setUser}) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    console.log("i have been clicked");
+
     const formData = {
       username:username,
       password:password
     }
-    console.log(formData);
-    setUser(username)
 
     fetch("http://localhost:3000/login", {
      method: "POST",
@@ -50,25 +55,26 @@ function LogIn({onLogIn, setUser}) {
         <h6>Welcome to</h6>
         <h1>To Your Door App</h1>
       </div>
+      { errors ? (<div style={{color: "red", margin: "1rem"}}>{errors}</div>) : ""}
       <div className="main">
         <form>
           <span>
             <i className="fa fa-user"></i>
-            <input type="text" placeholder="Username" name=""></input>
+            <input type="text" placeholder="Username" name="username" onChange={(e) => setUsername(e.target.value)}></input>
           </span>
           <br></br>
 
           <span>
             <i className="fa fa-lock"></i>
-            <input type="password" placeholder="password" name=""></input>
+            <input type="password" placeholder="password" name="password" onChange={(e) => setPassword(e.target.value)}></input>
           </span>
           <br></br>
 
-          <button type="submit" onClick={(e) => handleSubmit(e)} id="login-btn"><Link to="/profile">Login</Link></button>
+          <button type="submit" onClick={(e) => handleSubmit(e)} id="login-btn">Login</button>
 
           <div className="links">
                 <p>Don't have an account?&nbsp;</p>
-                <a href="#">Signup</a>
+                <Link to="/signup">Signup</Link>
             </div>
         </form>
         

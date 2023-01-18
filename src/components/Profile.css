@@ -31,13 +31,23 @@
     margin: .3rem 1.5rem 0 1.5rem;
 }
 
+.profile-image {
+  float: left;
+  width: calc(33.333% - 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
 .prof-card6 {
   border: 1px solid #000;
-  font-size: 2rem;
+  font-size: 2rem;  
 }
 
 .prof-card6 h2 {
   text-align: center;
+  margin-top: 1.5rem;
 }
 
 .icons {

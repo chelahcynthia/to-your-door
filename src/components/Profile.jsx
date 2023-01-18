@@ -17,10 +17,11 @@ function Profile({user}) {
         <div className='prof-card2'>
         </div>
 
-        <div className='prof-card3'>          
+        <div className='prof-card3'> 
+          <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />         
         </div>
         <div className='prof-card4'>          
-        </div>
+        </div>        
         <div className='prof-card5'>
         <img src="https://img.freepik.com/free-photo/chicken-skewers-with-slices-sweet-peppers-dill_2829-18813.jpg?w=1380&t=st=1672986735~exp=1672987335~hmac=2ce74dfba4228412b7afe5eba4c5ac8bb4b3cb6e12b00f875f09b31fdec3985d" alt="" />
         </div>

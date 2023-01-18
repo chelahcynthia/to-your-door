@@ -25,7 +25,7 @@ function Profile({user}) {
         <img src="https://img.freepik.com/free-photo/chicken-skewers-with-slices-sweet-peppers-dill_2829-18813.jpg?w=1380&t=st=1672986735~exp=1672987335~hmac=2ce74dfba4228412b7afe5eba4c5ac8bb4b3cb6e12b00f875f09b31fdec3985d" alt="" />
         </div>
         <div className='prof-card6'>
-          <h2>Welcome, Chelah!</h2>
+          <h2>Welcome, {user}!</h2>
           <div className='icons'>
             <i class="fa fa-twitter" aria-hidden="true"></i>
             <i class="fa fa-facebook-official" aria-hidden="true"></i>

@@ -12,12 +12,13 @@
 }
 
 .main-content input {
-  width: 100%;
+  width: 60%;
   height: 40px;
   border: none;
   background-color: transparent;
   opacity: 1;
-  border-bottom: 2px solid black;
+  border: 2px solid #00a3ff;
+  border-radius: 25px;
   padding-left: 40px;
   box-sizing: border-box;
   font-size: 15px;
@@ -29,8 +30,8 @@
 
   height: 40px;
   font-size: 20px;
-  background-color: #004AAD;
-  
+  background-color: #00a3ff;
+  border-radius: 25px;
   color: #ffffff;
   font-weight: bold;
   border: none;
@@ -54,8 +55,14 @@
   color: #ffffff;
 }
 .sign-link a {
-  color: #004AAD;
+  color: #00a3ff;
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
+  transition: all .2s ease-in-out;
+}
+
+.sign-link a:hover {
+  color: #00a3ff;
+  text-decoration: underline;
 }

@@ -98,8 +98,8 @@ function SignUp() {
               className="sign-btn"
             >
               Signup
-            </button>
-            <p>Already have an account?</p>
+            </button>&nbsp;
+            <p>Already have an account?</p> &nbsp;
             <Link to="/login">Login</Link>
 
           </div>

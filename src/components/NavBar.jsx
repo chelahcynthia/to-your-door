@@ -24,7 +24,7 @@ function NavBar() {
     <>
       <nav className="navbar">
         <div className="navbar-brand">
-        <MdDeliveryDining className="delivery-icon" size='50px'/>
+        <MdDeliveryDining className="delivery-icon" size='30px'/>
           <h2>To Your Door</h2>
         </div>
 
@@ -46,16 +46,16 @@ function NavBar() {
             </li>
             <li>
               <NavLink className="navlink" to="/login">
-                <i className="fa fa-sign-in"></i>My Account
+                <i className="fa fa-sign-in"></i> My Account
               </NavLink>
             </li>
             <li>
               <NavLink className="navlink" onClick={handleShow}>
-                <i className="fa fa-shopping-cart"></i>Cart
+                <i className="fa fa-shopping-cart"></i>&nbsp;Cart &nbsp;
               
                 
-              </NavLink>
               <Badge>{cart.length}</Badge>
+              </NavLink>
               <Modal show={show} onHide={handleClose}>
                   <Modal.Header closeButton>
                     <Modal.Title>Shopping Cart</Modal.Title>

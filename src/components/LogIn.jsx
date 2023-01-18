@@ -59,7 +59,7 @@ function LogIn({onLogIn, setUser}) {
       <div className="main">
         <form>
           <span>
-            <i className="fa fa-user"></i>
+            <i className="fa fa-user icons"></i>
             <input type="text" placeholder="Username" name="username" onChange={(e) => setUsername(e.target.value)}></input>
           </span>
           <br></br>

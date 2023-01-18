@@ -8,7 +8,19 @@ import Form from "react-bootstrap/Form";
 const Cart = () => {
 
 const {state: { cart}, dispatch,} = CartState();
-const [total, setTotal] = useState();
+const [total, setTotal] = useState("");
+const [num, setNum] = useState(0);
+// function for calculating random number
+function randomNumberInRange(min, max) {
+  // 👇️ get number between min (inclusive) and max (inclusive)
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const handleClick = () => {
+  setNum(randomNumberInRange(1, 50));
+};
+
+
 useEffect(() => {
  setTotal(cart.reduce((acc, curr) => acc + Number(curr.price)*curr.qty, 0));
 },[cart])
@@ -16,31 +28,23 @@ useEffect(() => {
     <div className="home">
       <div className="productContainer">
       
-        {cart.map((prod) => (
-          <ListGroup.Item key={prod.id}>
+        {cart.map((food) => (
+          <ListGroup.Item key={food.id}>
          <Row>
           <Col md={2}>
-            <Image src={prod.path} alt={prod.mealName} fluid rounded />
+            <Image src={food.path} alt={food.mealName} fluid rounded />
           </Col>
           <Col md={2} >
-            <span>{prod.mealName}</span>
+            <span>{food.mealName}</span>
           </Col>
           <Col md={2} >
-            {prod.price}
+            {food.price}
           </Col>
           <Col>
-          {/* <Form.Control as="select" value={prod.qty}
+         
+          <Form.Control type="number" placeholder="QTY" value={food.qty}
           onChange={(e) => dispatch({type: "CHANGE_CART_QTY", payload:{
-            id:prod.id,
-            qty: e.target.value,
-          }})}>
-            {[...Array(prod.inStock).keys()].map((x) => (
-              <option key={x + 1}>{x + 1}</option>
-            ))}
-          </Form.Control> */}
-          <Form.Control type="number" placeholder="QTY" value={prod.qty}
-          onChange={(e) => dispatch({type: "CHANGE_CART_QTY", payload:{
-            id:prod.id,
+            id:food.id,
             qty: e.target.value,
           }})}>
          
@@ -49,7 +53,7 @@ useEffect(() => {
           <Col>
           <Button type="button" variant="light" onClick={() => dispatch({
             type: "REMOVE_FROM_CART",
-            payload:prod,
+            payload:food,
           })}>Remove</Button>
           </Col>
          </Row>
@@ -60,7 +64,8 @@ useEffect(() => {
       <div className='filters summary'>
         <span className="title">Subtotal({cart.length}) items</span>
         <span style={{fontWeight: 700, fontSize: 20}}>Total: Ksh {total}</span>
-        <Button type="button" disabled={cart.length === 0}>Proceed to Checkout</Button>
+        <h2>Your order will arrive in {num} minutes.</h2>
+        <Button type="button" onClick={handleClick} disabled={cart.length === 0}>Proceed to Checkout</Button>
       </div>
     </div>
   )

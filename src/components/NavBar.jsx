@@ -50,18 +50,18 @@ function NavBar() {
                     {/* <h1>This is the modal body</h1> */}
                     {cart.length > 0 ?(
                       <>
-                      {cart.map(prod => (
+                      {cart.map(food => (
                         <span className = "cartitem" key="prod.key">
-                          <img className="cartItemImg" src={prod.path} alt={prod.mealName} />
+                          <img className="cartItemImg" src={food.path} alt={prod.mealName} />
                           <div className ="cartItemDetail">
-                            <span>{prod.mealName} </span>
-                            <span>Ksh {prod.price}</span>
+                            <span>{food.mealName} </span>
+                            <span>Ksh {food.price}</span>
                           </div>
                         
                           <Button fontSize = "20px" style={{cursor:"pointer", margin:".75rem"}} onClick={()=>
                           dispatch({
                             type: "REMOVE_FROM_CART",
-                            payload:prod,
+                            payload:food,
                           })}>Remove</Button>
                         </span>
 

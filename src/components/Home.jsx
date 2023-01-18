@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Home.css';
-
-
-
 function Home() {
   return (
     <div className="home-container">
@@ -11,7 +8,6 @@ function Home() {
         <i className="fa fa-user aria-hidden=true"></i>
           About Us 
       </Link>
-    
       <Link to="/restaurant" className="order-btn">
         <i className="fa fa-cutlery"></i>Order Now
       </Link>
@@ -20,5 +16,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;

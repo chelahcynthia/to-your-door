@@ -23,7 +23,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
-
         <Route path="/profile" element={<Profile user={user}/>} />
         <Route path="/login" element={<LogIn setUser={setUser}/>} />
         <Route path="/signup" element={<SignUp />} />
@@ -31,7 +30,6 @@ function App() {
         <Route path="/food" element={<Food />} />
 
         <Route path="/restaurant" element={<Restaurant />} />
-
       </Routes>
    
      

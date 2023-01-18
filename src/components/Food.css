@@ -13,23 +13,28 @@
 }
 
 /* this is the card for the food details */ 
- .food-card{
+ .food{
     /* position:relative; */
+    display: flex;
+ 
+    
 }
-.quantity-box
+
+
+
+/* .quantity-box
 {
     bottom:50px;
    /* position:absolute; */
-    width:160px;
+    /* width:160px;
     right:20px;
     padding:10px;
-}
+} */
 /* food category text */
-.food-cat {
+/* .food-cat {
     /* position:absolute; */
-    left: 1.75rem;
-    bottom:3rem;
-}
+    /* left: 1.75rem;
+    bottom:3rem; */ 
 
 
 

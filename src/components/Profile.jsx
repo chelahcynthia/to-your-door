@@ -4,7 +4,7 @@ import "./Profile.css"
 
 function Profile({user}) {
   return (
-    <>
+    <div className='prof'>
       <div className='prof-container'>
         <h2>Profile</h2>
         <i className="fa fa-user-circle"></i>
@@ -36,7 +36,7 @@ function Profile({user}) {
         </div>
 
       </div>
-    </>    
+    </div>    
     
   )
 }

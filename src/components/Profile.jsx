@@ -12,7 +12,7 @@ function Profile({user}) {
 
       <div className='profile'>
         <div className='prof-card1'>
-          <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /> 
+          <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2048&q=80" alt="" />       
         </div>
 
         <div className='prof-card2'>
@@ -35,6 +35,15 @@ function Profile({user}) {
         <div className='prof-card5'>
           <img src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=1480" alt="" />
         </div>
+
+        <div className='prof-card6'>
+          <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+        </div>
+
+        <div className='prof-card7'>
+          <img src="https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+        </div>       
+        
       </div>
     </div>    
     

@@ -26,7 +26,7 @@ useEffect(() => {
 },[cart])
   return (
     <div className="home">
-      <div className="productContainer">
+      {/* <div className="productContainer">
       
         {cart.map((food) => (
           <ListGroup.Item key={food.id}>
@@ -60,7 +60,7 @@ useEffect(() => {
           </ListGroup.Item>
         ))}
      
-      </div>
+      </div> */}
       <div className='filters summary'>
         <span className="title">Subtotal({cart.length}) items</span>
         <span style={{fontWeight: 700, fontSize: 20}}>Total: Ksh {total}</span>

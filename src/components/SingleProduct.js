@@ -23,7 +23,7 @@ const SingleProduct = ({ foodData }) => {
               
               <img src={food.img_url} alt='food-item'/>
               
-              <p>{food.foodName}</p>
+              <p>{food.name}</p>
               <p>{food.price}</p>
               <p>{food.description}</p>
               <p>{food.category}</p>

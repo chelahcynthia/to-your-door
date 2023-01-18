@@ -51,7 +51,7 @@ function NavBar() {
                     {cart.length > 0 ?(
                       <>
                       {cart.map(food => (
-                        <span className = "cartitem" key="prod.key">
+                        <span className = "cartitem" key="food.key">
                           <img className="cartItemImg" src={food.img_url} alt={food.foodName} />
                           <div className ="cartItemDetail">
                             <span>{food.foodName} </span>

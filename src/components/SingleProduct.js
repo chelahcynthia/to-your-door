@@ -49,24 +49,6 @@ const SingleProduct = ({ foodData }) => {
              </div>
            </Form.Group>
          </Form>
-
-
-
-              {/* <Card className="food-card">
-     <Card.Img src={food.img_url} />
-     <Card.Body>
-     <Card.ImgOverlay>
-       <Card.Title className="title-color">{food.foodName}</Card.Title>
-       <Card.Subtitle className="mb-2 text-muted subtitle-color">Price: {food.price}</Card.Subtitle>
-       
-       <Card.Text className="text-color">
-        {food.description}
-       </Card.Text>
-       <Card.Text className="food-cat">{food.category}</Card.Text>
-           
-       </Card.ImgOverlay>
-     </Card.Body>
-   </Card> */}
             </div>
           </>
         ))}

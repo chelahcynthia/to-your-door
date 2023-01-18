@@ -1,9 +1,6 @@
-* {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
 
-.container {
-  width: 500px;
+.login-container {
+  width: 800px;
   padding: 20px;
   padding-left: 40px;
 
@@ -15,20 +12,19 @@
   
   padding-bottom: 20px;
   padding-top: 50px;
-}
-
-.header h6 {
-  color: black;
-  font-size: 20px;
-  font-weight: 200;
-  margin-bottom: 16px;
-}
-.header p {
-  color: black;
+  color: #ffffff;
   font-size: 20px;
   text-align: left;
   font-size: bold;
 }
+
+.header h6 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 16px;
+}
+
 
 .main {
   text-align: center;
@@ -50,14 +46,15 @@
 
 .main button {
   padding-left: 0;
-  background-color: #00a3ff;
+  background-color: #004AAD;
   color: #f5f5f5;
   letter-spacing: 1px;
   font-weight: bold;
   margin-bottom: 70px;
   box-shadow: 2px 2px 5px #555;
   outline: none;
-  border: 1px solid #00a3ff;
+  border: 1px  #f9fbfc;
+  border-radius: 10px;
   padding: 10px 10px;
   font-size: 20px;
   width: 30%;
@@ -90,9 +87,12 @@
 }
 
 .links a {
-  color: #00a3ff;
+  color: #004AAD;
   text-decoration: none;
   font-weight: bold;
+}
+.links p {
+  color: #ffffff;
 }
 
 #login-btn {

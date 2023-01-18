@@ -1,5 +1,5 @@
 .sign-container {
-  width: 500px;
+  width: 800px;
   padding: 20px;
   padding-left: 40px;
   border-radius: 25px;
@@ -21,7 +21,7 @@
   padding-left: 40px;
   box-sizing: border-box;
   font-size: 15px;
-  color: black;
+  color: white;
   margin-bottom: 25px;
 }
 .sign-btn {
@@ -29,24 +29,33 @@
 
   height: 40px;
   font-size: 20px;
-  background-color: #00a3ff;
-  color: #f5f5f5;
+  background-color: #004AAD;
+  
+  color: #ffffff;
   font-weight: bold;
   border: none;
 }
 .sign-header h3 {
-  color: black;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 200;
   margin-bottom: 16px;
+}
+.sign-header h1{
+  color: #ffffff;
+  font-weight: 800;
 }
 .sign-link {
   display: flex;
   align-items: baseline;
   font-size: 15px;
 }
+.sign-link p{
+  color: #ffffff;
+}
 .sign-link a {
-  color: #00a3ff;
+  color: #004AAD;
   text-decoration: none;
   font-weight: bold;
+  font-size: 20px;
 }

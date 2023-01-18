@@ -50,7 +50,7 @@ function LogIn({onLogIn, setUser}) {
   }
 
   return (
-    <div className="container">
+    <div className="login-container">
       <div className="header">
         <h6>Welcome to</h6>
         <h1>To Your Door App</h1>

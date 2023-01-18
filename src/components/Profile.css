@@ -24,28 +24,24 @@
 }
 
 .profile {
-  display: grid;
+    display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 150px 150px 150px 150px;
     gap: 1.5rem;
-    margin: .3rem 1.5rem 0 1.5rem;
+    margin: .3rem 1.5rem 1.5rem 1.5rem;
 }
 
-.profile-image {
-  float: left;
-  width: calc(33.333% - 1rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 3rem;
+.prof-card1  {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
-.prof-card6 {
+.prof-card3 {
   border: 1px solid #000;
   font-size: 2rem;  
 }
 
-.prof-card6 h2 {
+.prof-card3 h2 {
   text-align: center;
   margin-top: 1.5rem;
 }
@@ -57,6 +53,8 @@
 .icons i {
   margin-right: 3.5rem;
 }
+
+
 
 
 

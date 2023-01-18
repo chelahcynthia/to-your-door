@@ -5,12 +5,12 @@ import Cart from "./components/Cart";
 import Profile from "./components/Profile";
 import LogIn from "./components/LogIn";
 import SignUp from "./components/SignUp"
-import About from "./components/About";
 import NavBar from "./components/NavBar";
 import Food from "./components/Food"
 import Restaurant from "./components/Restaurant"
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import About from "./components/About";
 
 function App() {
   const [user, setUser] = useState("User")
@@ -28,6 +28,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/about" element={<About />} />
         <Route path="/food" element={<Food />} />
+
         <Route path="/restaurant" element={<Restaurant />} />
       </Routes>
    

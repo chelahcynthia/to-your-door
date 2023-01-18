@@ -1,5 +1,9 @@
 * {
   overflow-y: hidden;
+  background-image: url("https://images.unsplash.com/photo-1569091791842-7cfb64e04797?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .prof-container{
@@ -19,11 +23,30 @@
 
 .profile {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 270px 270px;
-  gap: 1.5rem;
-
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 150px 150px 150px 150px;
+    gap: 1.5rem;
+    margin: .3rem 1.5rem 0 1.5rem;
 }
+
+
+
+.prof-card6 {
+  border: 1px solid #000;
+  font-size: 2rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;  */
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+/* .icons {
+  display: flex;
+} */
 
 
 

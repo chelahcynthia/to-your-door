@@ -7,9 +7,10 @@
   
   .single-food-card {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
-    margin: .5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
   
   .foodCard{

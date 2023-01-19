@@ -1,21 +1,15 @@
-.text-color
-{
-    color: black;
+.text-color {
+  color: black;
 }
-.title-color
-{
-    color:  black;
+.title-color {
+  color: black;
 }
-.subtitle-color
-{
-    color:  black;
+.subtitle-color {
+  color: black;
 }
 
-/* this is the card for the food details */ 
- .food-card-container {
-    /* position:relative; */
-    /* display: flex; */
-    width: 1400px;
-    margin: 0 auto;
-
+/* this is the card for the food details */
+.food-card-container {
+  width: 1400px;
+  margin: 0 auto;
 }

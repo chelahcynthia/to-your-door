@@ -9,12 +9,10 @@ function LogIn({ onLogIn, setUser }) {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState();
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    console.log("i have been clicked");
 
     const formData = {
       username: username,
@@ -32,8 +30,9 @@ function LogIn({ onLogIn, setUser }) {
         response.json().then((data) => {
           console.log(data);
           localStorage.setItem("user", JSON.stringify(data.customer));
-          localStorage.setItem("token", data.jwt); 
-          navigate("/")
+          localStorage.setItem("token", data.jwt);
+          navigate("/");
+          setUser(formData.username);
         });
       } else {
         response.json().then((err) => {

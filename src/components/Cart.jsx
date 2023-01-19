@@ -4,6 +4,10 @@ import { CartState } from "../Context";
 import {  Image } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import PayForm from "./PayForm";
+import { Modal } from "bootstrap";
+import { useNavigate } from "react-router-dom";
+
 const Cart = () => {
   const {
     state: { cart },
@@ -12,6 +16,7 @@ const Cart = () => {
   const [total, setTotal] = useState("");
   const [num, setNum] = useState(0);
   const [show, setShow] = useState(false);
+  const navigate = useNavigate()
   // function for calculating random number
   function randomNumberInRange(min, max) {
     // 👇️ get number between min (inclusive) and max (inclusive)
@@ -19,6 +24,7 @@ const Cart = () => {
   }
 
   const handleClick = () => {
+    navigate("/payment")
     setNum(randomNumberInRange(1, 50));
   };
 
@@ -98,6 +104,8 @@ const Cart = () => {
               Proceed to Checkout
             </Button>
           </div>
+
+          
 </div>
       </div>
     </div>

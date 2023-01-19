@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import "./SignUp.css";
 
 function SignUp() {
@@ -12,6 +12,9 @@ function SignUp() {
     password: "",
     password_confirmation: "",
   });
+
+const navigate = useNavigate()
+
   const handleSubmit = (e) => {
     e.preventDefault();
     
@@ -27,6 +30,7 @@ function SignUp() {
       console.log(data)
       localStorage.setItem("user", JSON.stringify(data.customer))
       localStorage.setItem("token", data.token)
+      navigate("/")
     })
     .catch((err) => console.error(err))
     

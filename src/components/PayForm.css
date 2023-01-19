@@ -1,0 +1,45 @@
+.payment-container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.1px);
+    -webkit-backdrop-filter: blur(9.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+  }
+  
+  #payment-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #payment-form label {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.1rem;
+  }
+  
+  #phone-number {
+    border-radius: 10px;
+    border: white;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    padding: .1rem .5rem;
+  }
+  
+  #phone-number:focus {
+    outline: none;
+  }
+  
+  #payment-form button {
+    border: #466efd;
+    background-color: #466efd;
+    font-weight: bolder;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: .2rem 0;
+  }

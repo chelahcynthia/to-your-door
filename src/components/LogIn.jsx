@@ -2,12 +2,15 @@ import React, { useState } from "react";
 
 import "./LogIn.css";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function LogIn({ onLogIn, setUser }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState();
+
+  const navigate = useNavigate()
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -29,7 +32,8 @@ function LogIn({ onLogIn, setUser }) {
         response.json().then((data) => {
           console.log(data);
           localStorage.setItem("user", JSON.stringify(data.customer));
-          localStorage.setItem("token", data.jwt);
+          localStorage.setItem("token", data.jwt); 
+          navigate("/")
         });
       } else {
         response.json().then((err) => {

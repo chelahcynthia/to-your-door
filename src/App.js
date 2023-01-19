@@ -11,6 +11,9 @@ import Restaurant from "./components/Restaurant"
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from "./components/About";
+import ProtectedRoutes from "./ProtectedRoutes";
+import PayForm from "./components/PayForm";
+
 
 function App() {
   const [user, setUser] = useState("User")
@@ -22,14 +25,18 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route element={<ProtectedRoutes/>} >
         <Route path="/cart" element={<Cart />} />
         <Route path="/profile" element={<Profile user={user}/>} />
-        <Route path="/login" element={<LogIn setUser={setUser}/>} />
-        <Route path="/signup" element={<SignUp />} />
         <Route path="/about" element={<About />} />
         <Route path="/food" element={<Food />} />
 
         <Route path="/restaurant" element={<Restaurant />} />
+        <Route path="/payment" element={<PayForm/>} />
+        </Route>
+        <Route path="/login" element={<LogIn setUser={setUser}/>} />
+
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
    
      

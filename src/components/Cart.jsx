@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Cart.css";
 import { CartState } from "../Context";
-import { ListGroup, Image } from "react-bootstrap";
+import {  Image } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
 const Cart = () => {
   const {
@@ -33,16 +31,16 @@ const Cart = () => {
     <div className="checkout">
       <div className="productContainer">
         {cart.map((food) => (
-          <ListGroup.Item key={food.id}>
-            <Row className="checkout_row">
-              <Col md={1}>
+          <div key={food.id}>
+            <div className="checkout_row">
+              <div>
                 <Image src={food.img_url} alt={food.mealName} className="checkout_image" />
-              </Col>
-              <Col md={2}>
+              </div>
+              <div className="product-checkout-name">
                 <span>{food.mealName}</span>
-              </Col>
-              <Col md={2}>{food.price}</Col>
-              <Col>
+              </div>
+              <div className="product-checkout-price">Kshs. {food.price}</div>
+              <div className="product-checkout-alter">
                 <Form.Control
                   type="number"
                   placeholder="QTY"
@@ -57,10 +55,11 @@ const Cart = () => {
                     })
                   }
                 ></Form.Control>
-              </Col>
-              <Col>
-                <Button
+              </div>
+              <div className="product-checkout-button">
+                <button
                   type="button"
+                  className="remove-button"
                   variant="light"
                   onClick={() =>
                     dispatch({
@@ -70,30 +69,36 @@ const Cart = () => {
                   }
                 >
                   Remove
-                </Button>
-              </Col>
-            </Row>
-          </ListGroup.Item>
+                </button>
+              </div>
+            </div>
+          </div>
         ))}
       </div>
       <div className="filters-summary">
-        <span className="title">Subtotal({cart.length}) items</span>
-        <span style={{ fontWeight: 700, fontSize: 20 }}>
-          Total: Ksh {total}
-        </span>
-
-        {show && <h2>Your order will arrive in {num} minutes.</h2>}
-        <Button className="Add-btn" onClick={() => setShow(!show)}>
-          Add Delivery?
-        </Button>
-        <Button
-          className="Checkout-btn"
-          type="button"
-          onClick={handleClick}
-          disabled={cart.length === 0}
-        >
-          Proceed to Checkout
-        </Button>
+        <div className="checkout-total">
+          <span className="title">Subtotal({cart.length}) items</span>
+          <span style={{ fontWeight: 700, fontSize: 20 }}>
+            Total: Ksh {total}
+          </span>
+        </div>
+<div className="checkout-section">
+  
+          {show && <span className="delivery-time">Your order will arrive in {num} minutes.</span>}
+          <div className="checkout-buttons">
+            <Button className="Add-btn" onClick={() => setShow(!show)}>
+              Add Delivery?
+            </Button>
+            <Button
+              className="Checkout-btn"
+              type="button"
+              onClick={handleClick}
+              disabled={cart.length === 0}
+            >
+              Proceed to Checkout
+            </Button>
+          </div>
+</div>
       </div>
     </div>
   );

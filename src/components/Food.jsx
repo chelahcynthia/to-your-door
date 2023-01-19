@@ -18,7 +18,7 @@ function Food() {
 
   // console.log(foodData)
   return (
-    <div className="food">
+    <div className="food-card-container">
         
         <SingleProduct foodData={foodData} />
       </div>

@@ -17,6 +17,7 @@ import PayForm from "./components/PayForm";
 
 function App() {
   const [user, setUser] = useState("User")
+  const [amount, setAmount] = useState("")
  
   return (
     <>
@@ -26,13 +27,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route element={<ProtectedRoutes/>} >
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/cart" element={<Cart setAmount={setAmount}/>} />
         <Route path="/profile" element={<Profile user={user}/>} />
         <Route path="/about" element={<About />} />
         <Route path="/food" element={<Food />} />
 
         <Route path="/restaurant" element={<Restaurant />} />
-        <Route path="/payment" element={<PayForm/>} />
+        <Route path="/payment" element={<PayForm amount={amount}/>} />
         </Route>
         <Route path="/login" element={<LogIn setUser={setUser}/>} />
 

@@ -8,7 +8,7 @@ import PayForm from "./PayForm";
 import { Modal } from "bootstrap";
 import { useNavigate } from "react-router-dom";
 
-const Cart = () => {
+const Cart = ({setAmount}) => {
   const {
     state: { cart },
     dispatch,
@@ -26,6 +26,7 @@ const Cart = () => {
   const handleClick = () => {
     navigate("/payment")
     setNum(randomNumberInRange(1, 50));
+    setAmount(total)
   };
 
   useEffect(() => {

@@ -4,16 +4,31 @@ import './PayForm.css'
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function PayForm() {
+function PayForm({amount}) {
 
   const [phoneNumber, setPhoneNumber] = useState()
+  
   const navigate = useNavigate()
+  const apiUrl = "http://127.0.0.1:3000/mpesa"
+  
+  const mpesaDetails = {
+    phone_number: phoneNumber,
+    amount: amount
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
 
     console.log(phoneNumber);
     navigate("/cart")
+
+    console.log(mpesaDetails);
+
+    fetch(apiUrl, {
+      method:"POST",
+      headers: {"Content-type":"application/json"},
+      body: JSON.stringify(mpesaDetails)
+    })
   }
 
   return (

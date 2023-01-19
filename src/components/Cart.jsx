@@ -91,7 +91,7 @@ const Cart = ({setAmount}) => {
         </div>
 <div className="checkout-section">
   
-          {show && <span className="delivery-time">Your order will arrive in {num} minutes.</span>}
+          {show && <span className="delivery-time">Your order will arrive in 10 minutes.</span>}
           <div className="checkout-buttons">
             <Button className="Add-btn" onClick={() => setShow(!show)}>
               Add Delivery?

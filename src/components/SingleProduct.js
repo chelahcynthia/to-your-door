@@ -23,9 +23,9 @@ const SingleProduct = ({ foodData }) => {
               
               <img src={food.img_url} alt='food-item'/>
               
-              <p>{food.name}</p>
-              <p>{food.price}</p>
-              <p>{food.description}</p>
+
+              <p className="food_name">{food.name}</p>
+              <p>Price: {food.price}</p>
               <p>{food.category}</p>
               <Form>
               <Form.Group className="quantity-box">

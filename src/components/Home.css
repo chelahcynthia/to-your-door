@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400&display=swap');
+
 .home-container {
   display: flex;
   justify-content: center;
@@ -6,28 +9,42 @@
   color: white;
   width: 700px;
   padding: 2rem;
+  overflow: hidden;
 }
 
 #homepage-title {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: bolder;
   margin-bottom: 2rem;
+  font-family: 'Aladin';
 }
 
 #homepage-intro {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
+#variety{
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'Poppins';
+  font-style:italic;
+}
+.home-container cite{
+  font-size: 1.5rem;
+  color: #00a3ff;
+  margin-bottom: 1rem;
+}
 
 .order-btn {
   background-color: #00a3ff;
+  padding: 10px;
+  margin-top: 5rem;
   color: #f5f5f5;
   border: #f5f5f5;
   border-radius: 10px;
-  width: 60%;
+  width: 50%;
   text-align: center;
-  padding: 15px;
-  /* margin: 15px; */
+ 
   font-size: 25px;
   box-shadow: 2px 2px 2px 2px rgb(17, 17, 32, 0.3);
   cursor: pointer;
